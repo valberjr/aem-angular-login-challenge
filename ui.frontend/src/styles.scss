@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(//db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+
+html,
+body {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+.nav-container,
+.rw-box {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    color: #000000;
+}
+
+// #ContentWrapper {
+//     .container {
+//         height: 500px !important;
+//     }
+// }
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Login Container */
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        min-width: 100%;
+    }
+}
+
+.login-container {
+    display: flex;
+    height: 744px; // excluir no final
+}
+
+.login-container-left {
+    height: 744px;
+    background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+    box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+}
+
+.login-container-center {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+/* Home Container */
+
+.home-container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+// .home-container-center {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+// }
+
+.home-header-logo-compasso {
+    display: flex;
+    width: 30%;
+}
+
+.home-left-logo-compasso-bola {
+    display: flex;
+    margin-left: -239px;
+}
+
+.home-container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+// .home-container-footer {
+//     display: flex;
+//     justify-content: space-between;
+//     background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+// }

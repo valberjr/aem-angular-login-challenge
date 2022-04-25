@@ -14,9 +14,8 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 export const environment = {
-  appRoot:
-    "/content/angularapp/us/en/home.html", // tslint:disable-line
-  production: false,
-  publicUrl:
-    '/etc.clientlibs/angularapp/clientlibs/clientlib-angular/resources',
+    appRoot: '/content/angularapp/us/en/login-2.html', // tslint:disable-line
+    production: false,
+    publicUrl:
+        '/etc.clientlibs/angularapp/clientlibs/clientlib-angular/resources',
 };

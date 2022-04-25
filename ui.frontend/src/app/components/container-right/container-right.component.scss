@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    // height: 100vh; // deve ser o final
+    height: 744px;
+    background: url('../../../assets/notebook.jpg') center;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 600px) {
+    div.container {
+        display: none;
+    }
+}
