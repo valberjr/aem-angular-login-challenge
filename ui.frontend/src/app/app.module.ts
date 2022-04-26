@@ -11,6 +11,7 @@ import { AemAngularCoreWcmComponentsNavigationV1 } from '@adobe/aem-core-compone
 import { AemAngularCoreWcmComponentsAccordionV1 } from '@adobe/aem-core-components-angular-spa/containers/accordion/v1';
 import { AemAngularCoreWcmComponentsTabsV1 } from '@adobe/aem-core-components-angular-spa/containers/tabs/v1';
 import { APP_BASE_HREF } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -25,16 +26,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ContainerRightComponent } from './components/container-right/container-right.component';
+import { CurrentTimeComponent } from './components/current-time/current-time.component';
 import './components/import-components';
 import { InputComponent } from './components/input/input.component';
-import { LoginFormComponent } from './components/login-form/login-form.component';
 import { ModelManagerService } from './components/model-manager.service';
 import { PageComponent } from './components/page/page.component';
-import { LabelComponent } from './components/label/label.component';
-import { CurrentTimeComponent } from './components/current-time/current-time.component';
 import { WeatherComponent } from './components/weather/weather.component';
-
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     imports: [
@@ -73,8 +70,6 @@ import { HttpClientModule } from '@angular/common/http';
         ContainerRightComponent,
         InputComponent,
         ButtonComponent,
-        LoginFormComponent,
-        LabelComponent,
         CurrentTimeComponent,
         WeatherComponent,
     ],
@@ -82,7 +77,6 @@ import { HttpClientModule } from '@angular/common/http';
         PageComponent,
         ContainerRightComponent,
         InputComponent,
-        LabelComponent,
         CurrentTimeComponent,
         WeatherComponent,
     ],

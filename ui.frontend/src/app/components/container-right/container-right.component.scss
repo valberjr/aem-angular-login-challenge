@@ -1,23 +1,21 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    // height: 100vh; // deve ser o final
-    height: 744px;
+:host-context {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    div.login-container-right {
+        display: none;
+    }
+}
+
+.login-container-right {
+    height: 100vh; // deve ser o final
+    width: 100%;
     background: url('../../../assets/notebook.jpg') center;
     background-size: cover;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-top: 3%;
-}
-
-@media screen and (max-width: 600px) {
-    div.container {
-        display: none;
-    }
+    width: 30%;
+    padding-top: 3rem;
 }

@@ -34,68 +34,189 @@ p,
 // }
 
 /* Main Container */
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
+// .main-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     width: 100%;
+// }
 
 /* Login Container */
 
-@media screen and (max-width: 600px) {
-    .login-container {
-        min-width: 100%;
-    }
+// @media screen and (max-width: 600px) {
+//     .login-container {
+//         min-width: 100%;
+//     }
+// }
+
+:host-context {
+    display: block;
 }
 
 .login-container {
     display: flex;
-    height: 744px; // excluir no final
-}
+    flex-direction: column;
 
-.login-container-left {
-    height: 744px;
+    width: 100%;
+    height: 100vh;
+    gap: 5rem;
     background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
-}
 
-.login-container-center {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
+    font-family: 'Mark Pro';
+    font-style: normal;
+
+    p {
+        color: #e0e0e0;
+    }
+
+    .login-text-ola {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 76px;
+    }
+
+    .login-text-para-continuar {
+        font-weight: 400;
+        font-size: 16px;
+        width: 301px;
+    }
+
+    .login-container-form p {
+        color: #e0e0e0;
+
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+    }
 }
 
 /* Home Container */
 
 .home-container-header {
-    display: flex;
-    justify-content: space-between;
 }
 
-// .home-container-center {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-// }
+.home-container-right {
+    padding-top: 10em;
+
+    p {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .home-text-our {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.7em;
+
+            color: #c12d18;
+        }
+    }
+
+    .home-text-nossa {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+
+            text-align: right;
+
+            color: #222222;
+        }
+    }
+
+    .home-text-to-transform {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.8em;
+
+            text-align: right;
+
+            color: #c12d18;
+        }
+    }
+
+    .home-text-transformar {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+
+            text-align: right;
+
+            color: #222222;
+        }
+    }
+
+    .home-text-building {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.9em;
+
+            text-align: right;
+
+            color: #c12d18;
+        }
+    }
+
+    .home-text-construindo {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+            line-height: 30px;
+            text-align: right;
+
+            color: #222222;
+        }
+    }
+
+    .home-text-that {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3em;
+
+            text-align: right;
+
+            color: #c12d18;
+        }
+    }
+
+    .home-text-que {
+        p {
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+
+            text-align: right;
+
+            color: #222222;
+        }
+    }
+}
 
 .home-header-logo-compasso {
     display: flex;
     width: 30%;
+    margin-left: 5rem;
 }
 
 .home-left-logo-compasso-bola {
     display: flex;
-    margin-left: -239px;
-}
 
-.home-container-right {
-    display: flex;
-    flex-direction: column;
+    img {
+        width: 600px;
+        margin-left: -300px;
+    }
 }
-
-// .home-container-footer {
-//     display: flex;
-//     justify-content: space-between;
-//     background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
-// }
