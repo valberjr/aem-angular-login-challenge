@@ -32,6 +32,9 @@ import { InputComponent } from './components/input/input.component';
 import { ModelManagerService } from './components/model-manager.service';
 import { PageComponent } from './components/page/page.component';
 import { WeatherComponent } from './components/weather/weather.component';
+import { SearchComponent } from './components/search/search.component';
+import { LinkComponent } from './components/link/link.component';
+import { LabelComponent } from './components/label/label.component';
 
 @NgModule({
     imports: [
@@ -72,13 +75,20 @@ import { WeatherComponent } from './components/weather/weather.component';
         ButtonComponent,
         CurrentTimeComponent,
         WeatherComponent,
+        SearchComponent,
+        LinkComponent,
+        LabelComponent,
     ],
     entryComponents: [
         PageComponent,
         ContainerRightComponent,
         InputComponent,
+        ButtonComponent,
         CurrentTimeComponent,
         WeatherComponent,
+        SearchComponent,
+        LinkComponent,
+        LabelComponent,
     ],
     bootstrap: [AppComponent],
 })

@@ -2,15 +2,15 @@
     display: block;
 }
 
-@media screen and (max-width: 600px) {
-    div.login-container-right {
-        display: none;
-    }
-}
+.login-container--right {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
 
-.login-container-right {
-    height: 100vh; // deve ser o final
-    width: 100%;
+    // height: 100vh;
+    height: 828px;
+    // width: 100%;
     background: url('../../../assets/notebook.jpg') center;
     background-size: cover;
 }
@@ -18,4 +18,16 @@
 .logo {
     width: 30%;
     padding-top: 3rem;
+}
+
+// @media screen and (min-width: 480px) {
+//     div.login-container-right {
+//         display: none;
+//     }
+// }
+
+@media (max-width: 1200px) {
+    div.container--right {
+        display: none;
+    }
 }

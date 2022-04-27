@@ -1,31 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(//db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+@import '~normalize.css';
 
-html,
-body {
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-
-body {
-    background-color: #ffffff;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-.nav-container,
-.rw-box {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-    color: #000000;
-}
+@import url('http://fonts.cdnfonts.com/css/mark-pro?styles=78509,78511');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 // #ContentWrapper {
 //     .container {
@@ -33,31 +10,26 @@ p,
 //     }
 // }
 
-/* Main Container */
-// .main-container {
-//     display: flex;
-//     flex-wrap: wrap;
-//     width: 100%;
-// }
-
-/* Login Container */
-
-// @media screen and (max-width: 600px) {
-//     .login-container {
-//         min-width: 100%;
-//     }
-// }
-
 :host-context {
     display: block;
 }
+
+/* Login Container */
+
+// @media screen and (min-width: 480px) {
+//     div.login-container {
+//         display: none;
+//     }
+// }
 
 .login-container {
     display: flex;
     flex-direction: column;
 
-    width: 100%;
-    height: 100vh;
+    //width: 100%;
+    // height: 100vh;
+    height: 828px;
+
     gap: 5rem;
     background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
@@ -68,155 +40,202 @@ p,
     p {
         color: #e0e0e0;
     }
+}
 
-    .login-text-ola {
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 76px;
-    }
+.login-container-right {
+}
 
-    .login-text-para-continuar {
-        font-weight: 400;
-        font-size: 16px;
-        width: 301px;
-    }
+.login-text-ola {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 76px;
+}
 
-    .login-container-form p {
+.login-text-para-continuar {
+    font-weight: 400;
+    font-size: 16px;
+    width: 301px;
+}
+
+.login-container-form {
+    p {
         color: #e0e0e0;
-
         font-weight: 400;
         font-size: 30px;
         line-height: 38px;
+    }
+
+    div {
+        width: 283px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #e9b425;
     }
 }
 
 /* Home Container */
 
 .home-container-header {
-}
-
-.home-container-right {
-    padding-top: 10em;
-
-    p {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .home-text-our {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2.7em;
-
-            color: #c12d18;
-        }
-    }
-
-    .home-text-nossa {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.5em;
-
-            text-align: right;
-
-            color: #222222;
-        }
-    }
-
-    .home-text-to-transform {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2.8em;
-
-            text-align: right;
-
-            color: #c12d18;
-        }
-    }
-
-    .home-text-transformar {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.5em;
-
-            text-align: right;
-
-            color: #222222;
-        }
-    }
-
-    .home-text-building {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2.9em;
-
-            text-align: right;
-
-            color: #c12d18;
-        }
-    }
-
-    .home-text-construindo {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.5em;
-            line-height: 30px;
-            text-align: right;
-
-            color: #222222;
-        }
-    }
-
-    .home-text-that {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 3em;
-
-            text-align: right;
-
-            color: #c12d18;
-        }
-    }
-
-    .home-text-que {
-        p {
-            font-family: 'Mark Pro';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.5em;
-
-            text-align: right;
-
-            color: #222222;
-        }
-    }
-}
-
-.home-header-logo-compasso {
     display: flex;
-    width: 30%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+        div.time,
+        div.date {
+            display: none;
+        }
+    }
+}
+
+.logo-compasso {
+    display: flex;
+    width: 50%;
     margin-left: 5rem;
 }
 
-.home-left-logo-compasso-bola {
+.home-container-center {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
 
-    img {
-        width: 600px;
-        margin-left: -300px;
+    // @media screen and (max-width: 600px) {
+    //     div.time,
+    //     div.date {
+    //         display: none;
+    //     }
+    // }
+}
+
+.logo-compasso-bola {
+    position: absolute;
+    bottom: -20%; // -50
+    left: -25%;
+    max-width: 60vw;
+}
+
+.home-container-right {
+    p {
+        text-align: end;
+        font-family: 'Mark Pro';
+        font-style: normal;
     }
+
+    // @media screen and (max-width: 600px) {
+    //     div.time,
+    //     div.date {
+    //         display: none;
+    //     }
+    // }
+}
+
+.home-text-our {
+    font-weight: 700;
+    font-size: 36px;
+    color: #c12d18;
+}
+
+.home-text-nossa {
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+}
+
+.home-text-to-transform {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 40px;
+    color: #c12d18;
+}
+
+.home-text-transformar {
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+}
+
+.home-text-building {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 50px;
+    color: #c12d18;
+}
+
+.home-text-construindo {
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+}
+
+.home-text-that {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 50px;
+    color: #c12d18;
+}
+
+.home-text-que {
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+}
+
+/* Footer */
+.footer-container {
+    background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100vw;
+
+    display: grid;
+    // grid-template-columns: 17.6% 27.4% 5.5% 5.5% 8% 22% 7% 7%;
+    grid-template-columns: 1% 31.6% 5.5% 29.6% 5.5% 5.5% 5.5% 5.5% 5.5%;
+
+    p {
+        font-family: 'Mark Pro';
+        font-style: normal;
+        color: #ffffff;
+
+        height: 100px;
+        position: relative;
+        bottom: 12px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        // @media (max-width: 1000px) {
+        //     display: none;
+        // }
+    }
+
+    // @media (max-width: 1340px) {
+    //     grid-template-columns: 17.6% 27.4% 5.5% 5.5% 11% 19% 7% 7%;
+    // }
+    // @media (max-width: 1140px) {
+    //     grid-template-columns: 17.6% 27.4% 5.5% 5.5% 15% 15% 7% 7%;
+    // }
+    // @media (max-width: 1000px) {
+    //     display: block;
+    // }
+}
+
+.footer-text-essa-janela {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer-text-refresh {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-text-seconds {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
 }

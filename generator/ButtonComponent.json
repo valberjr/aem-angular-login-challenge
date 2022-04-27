@@ -32,6 +32,16 @@
                 "type": "textfield",
                 "json-expose": true,
                 "json-property": "label"
+            },
+            {
+                "field": "url",
+                "label": "URL",
+                "type": "pagefield",
+                "json-expose": true,
+                "json-property": "url",
+                "attributes": {
+                    "rootPath": "/content"
+                }
             }
         ]
     }

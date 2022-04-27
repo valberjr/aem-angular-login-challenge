@@ -38,6 +38,12 @@
                       jcr:primaryType="nt:unstructured"
                       name="./label"
                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <url cq-msm-lockable="./url"
+                    fieldLabel="URL"
+                    jcr:primaryType="nt:unstructured"
+                    name="./url"
+                    rootPath="/content"
+                    sling:resourceType="cq/gui/components/coral/common/form/pagefield"/>
             </items>
          </column>
       </items>

@@ -71,7 +71,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<button class=\"button\" type=\"button\" (click)=\"login()\">\n    {{ label }}\n</button>\n";
+    __webpack_exports__["default"] = "<button class=\"button\" type=\"button\" (click)=\"onClick()\">\n    {{ label }}\n</button>\n";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div fxLayoutAlign=\"center start\" class=\"login-container-right\">\n    <img\n        class=\"logo\"\n        src=\"/content/dam/angularapp/e959f2f20202d40e5f950e778d565743.png\"\n        alt=\"logo-compasso\"\n    />\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"login-container--right\">\n    <img\n        class=\"logo\"\n        src=\"/content/dam/angularapp/e959f2f20202d40e5f950e778d565743.png\"\n        alt=\"logo-compasso\"\n    />\n</div>\n";
     /***/
   },
 
@@ -136,6 +136,46 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/label/label.component.html":
+  /*!*********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/label/label.component.html ***!
+    \*********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsLabelLabelComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div *ngIf=\"isInvalidLogin\">{{ label }}</div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/link/link.component.html":
+  /*!*******************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/link/link.component.html ***!
+    \*******************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsLinkLinkComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<a href=\"#\" (click)=\"onClick()\">{{ label }}</a>\n";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/components/page/page.component.html":
   /*!*******************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/page/page.component.html ***!
@@ -152,6 +192,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     __webpack_exports__["default"] = "<aem-page class=\"structure-page\" [attr.data-cq-page-path]=\"path\" [cqPath]=\"path\" [cqItems]=\"items\" [cqItemsOrder]=\"itemsOrder\"></aem-page>\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/search/search.component.html":
+  /*!***********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/search/search.component.html ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsSearchSearchComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<input\n    class=\"search\"\n    type=\"text\"\n    name=\"search\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"value\"\n    (ngModelChange)=\"onChange($event)\"\n/>\n";
     /***/
   },
 
@@ -588,6 +648,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
     /*! ./components/weather/weather.component */
     "./src/app/components/weather/weather.component.ts");
+    /* harmony import */
+
+
+    var _components_search_search_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
+    /*! ./components/search/search.component */
+    "./src/app/components/search/search.component.ts");
+    /* harmony import */
+
+
+    var _components_link_link_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    /*! ./components/link/link.component */
+    "./src/app/components/link/link.component.ts");
+    /* harmony import */
+
+
+    var _components_label_label_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
+    /*! ./components/label/label.component */
+    "./src/app/components/label/label.component.ts");
 
     var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
@@ -602,8 +680,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         provide: _angular_common__WEBPACK_IMPORTED_MODULE_13__["APP_BASE_HREF"],
         useValue: '/'
       }],
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_26__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_33__["PageComponent"], _components_container_right_container_right_component__WEBPACK_IMPORTED_MODULE_28__["ContainerRightComponent"], _components_input_input_component__WEBPACK_IMPORTED_MODULE_31__["InputComponent"], _components_button_button_component__WEBPACK_IMPORTED_MODULE_27__["ButtonComponent"], _components_current_time_current_time_component__WEBPACK_IMPORTED_MODULE_29__["CurrentTimeComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_34__["WeatherComponent"]],
-      entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_33__["PageComponent"], _components_container_right_container_right_component__WEBPACK_IMPORTED_MODULE_28__["ContainerRightComponent"], _components_input_input_component__WEBPACK_IMPORTED_MODULE_31__["InputComponent"], _components_current_time_current_time_component__WEBPACK_IMPORTED_MODULE_29__["CurrentTimeComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_34__["WeatherComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_26__["AppComponent"], _components_page_page_component__WEBPACK_IMPORTED_MODULE_33__["PageComponent"], _components_container_right_container_right_component__WEBPACK_IMPORTED_MODULE_28__["ContainerRightComponent"], _components_input_input_component__WEBPACK_IMPORTED_MODULE_31__["InputComponent"], _components_button_button_component__WEBPACK_IMPORTED_MODULE_27__["ButtonComponent"], _components_current_time_current_time_component__WEBPACK_IMPORTED_MODULE_29__["CurrentTimeComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_34__["WeatherComponent"], _components_search_search_component__WEBPACK_IMPORTED_MODULE_35__["SearchComponent"], _components_link_link_component__WEBPACK_IMPORTED_MODULE_36__["LinkComponent"], _components_label_label_component__WEBPACK_IMPORTED_MODULE_37__["LabelComponent"]],
+      entryComponents: [_components_page_page_component__WEBPACK_IMPORTED_MODULE_33__["PageComponent"], _components_container_right_container_right_component__WEBPACK_IMPORTED_MODULE_28__["ContainerRightComponent"], _components_input_input_component__WEBPACK_IMPORTED_MODULE_31__["InputComponent"], _components_button_button_component__WEBPACK_IMPORTED_MODULE_27__["ButtonComponent"], _components_current_time_current_time_component__WEBPACK_IMPORTED_MODULE_29__["CurrentTimeComponent"], _components_weather_weather_component__WEBPACK_IMPORTED_MODULE_34__["WeatherComponent"], _components_search_search_component__WEBPACK_IMPORTED_MODULE_35__["SearchComponent"], _components_link_link_component__WEBPACK_IMPORTED_MODULE_36__["LinkComponent"], _components_label_label_component__WEBPACK_IMPORTED_MODULE_37__["LabelComponent"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_26__["AppComponent"]]
     })], AppModule);
     /***/
@@ -675,31 +753,49 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_local_storage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var src_app_label_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! src/app/label.service */
+    "./src/app/label.service.ts");
+    /* harmony import */
+
+
+    var src_app_local_storage_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! src/app/local-storage.service */
     "./src/app/local-storage.service.ts");
 
     var ButtonComponent = /*#__PURE__*/function () {
-      function ButtonComponent(localStorageService, router) {
+      function ButtonComponent(localStorageService, router, labelService) {
         _classCallCheck(this, ButtonComponent);
 
         this.localStorageService = localStorageService;
         this.router = router;
+        this.labelService = labelService;
       }
 
       _createClass(ButtonComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
       }, {
-        key: "login",
-        value: function login() {
+        key: "onClick",
+        value: function onClick() {
           var user = {
             username: this.localStorageService.get('username'),
             password: this.localStorageService.get('password')
           };
 
+          if (user) {
+            this.login(this.url, user);
+          } else {
+            console.log('redirecting to: ... ');
+          }
+        }
+      }, {
+        key: "login",
+        value: function login(url, user) {
           if (user.username === 'aaa' && user.password === '123') {
-            this.router.navigate(['content/angularapp/us/en/home.html']);
+            this.router.navigate([this.url]);
+          } else {
+            this.labelService.setInvalidLogin(true);
           }
         }
       }]);
@@ -709,13 +805,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     ButtonComponent.ctorParameters = function () {
       return [{
-        type: src_app_local_storage_service__WEBPACK_IMPORTED_MODULE_4__["LocalStorageService"]
+        type: src_app_local_storage_service__WEBPACK_IMPORTED_MODULE_5__["LocalStorageService"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: src_app_label_service__WEBPACK_IMPORTED_MODULE_4__["LabelService"]
       }];
     };
 
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()], ButtonComponent.prototype, "label", void 0);
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()], ButtonComponent.prototype, "url", void 0);
     ButtonComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
       selector: 'app-button',
       template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
@@ -745,7 +844,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ":host-context {\n  display: block;\n}\n\n@media screen and (max-width: 600px) {\n  div.login-container-right {\n    display: none;\n  }\n}\n\n.login-container-right {\n  height: 100vh;\n  width: 100%;\n  background: url('/etc.clientlibs/angularapp/clientlibs/clientlib-angular/resources/notebook.jpg') center;\n  background-size: cover;\n}\n\n.logo {\n  width: 30%;\n  padding-top: 3rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250YWluZXItcmlnaHQvQzpcXFVzZXJzXFx2YWxiZXIudmFzY29uY2Vsb3NcXERvY3VtZW50c1xcQUVNXFxQcm9qZXRvc1xcYWVtLWFuZ3VsYXItbG9naW4tY2hhbGxlbmdlXFx1aS5mcm9udGVuZC9zcmNcXGFwcFxcY29tcG9uZW50c1xcY29udGFpbmVyLXJpZ2h0XFxjb250YWluZXItcmlnaHQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvY29udGFpbmVyLXJpZ2h0L2NvbnRhaW5lci1yaWdodC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGNBQUE7QUNDSjs7QURFQTtFQUNJO0lBQ0ksYUFBQTtFQ0NOO0FBQ0Y7O0FERUE7RUFDSSxhQUFBO0VBQ0EsV0FBQTtFQUNBLHdHQUFBO0VBQ0Esc0JBQUE7QUNBSjs7QURHQTtFQUNJLFVBQUE7RUFDQSxpQkFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jb250YWluZXItcmlnaHQvY29udGFpbmVyLXJpZ2h0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3QtY29udGV4dCB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAgIGRpdi5sb2dpbi1jb250YWluZXItcmlnaHQge1xyXG4gICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICB9XHJcbn1cclxuXHJcbi5sb2dpbi1jb250YWluZXItcmlnaHQge1xyXG4gICAgaGVpZ2h0OiAxMDB2aDsgLy8gZGV2ZSBzZXIgbyBmaW5hbFxyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uL2Fzc2V0cy9ub3RlYm9vay5qcGcnKSBjZW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG59XHJcblxyXG4ubG9nbyB7XHJcbiAgICB3aWR0aDogMzAlO1xyXG4gICAgcGFkZGluZy10b3A6IDNyZW07XHJcbn1cclxuIiwiOmhvc3QtY29udGV4dCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xuICBkaXYubG9naW4tY29udGFpbmVyLXJpZ2h0IHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59XG4ubG9naW4tY29udGFpbmVyLXJpZ2h0IHtcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQ6IHVybChcIi4uLy4uLy4uL2Fzc2V0cy9ub3RlYm9vay5qcGdcIikgY2VudGVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4ubG9nbyB7XG4gIHdpZHRoOiAzMCU7XG4gIHBhZGRpbmctdG9wOiAzcmVtO1xufSJdfQ== */";
+    __webpack_exports__["default"] = ":host-context {\n  display: block;\n}\n\n.login-container--right {\n  display: flex;\n  align-items: flex-start;\n  align-content: flex-start;\n  justify-content: center;\n  height: 828px;\n  background: url('/etc.clientlibs/angularapp/clientlibs/clientlib-angular/resources/notebook.jpg') center;\n  background-size: cover;\n}\n\n.logo {\n  width: 30%;\n  padding-top: 3rem;\n}\n\n@media (max-width: 1200px) {\n  div.container--right {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250YWluZXItcmlnaHQvQzpcXFVzZXJzXFx2YWxiZXIudmFzY29uY2Vsb3NcXERvY3VtZW50c1xcQUVNXFxQcm9qZXRvc1xcYWVtLWFuZ3VsYXItbG9naW4tY2hhbGxlbmdlXFx1aS5mcm9udGVuZC9zcmNcXGFwcFxcY29tcG9uZW50c1xcY29udGFpbmVyLXJpZ2h0XFxjb250YWluZXItcmlnaHQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvY29udGFpbmVyLXJpZ2h0L2NvbnRhaW5lci1yaWdodC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGNBQUE7QUNDSjs7QURFQTtFQUNJLGFBQUE7RUFDQSx1QkFBQTtFQUNBLHlCQUFBO0VBQ0EsdUJBQUE7RUFHQSxhQUFBO0VBRUEsd0dBQUE7RUFDQSxzQkFBQTtBQ0ZKOztBREtBO0VBQ0ksVUFBQTtFQUNBLGlCQUFBO0FDRko7O0FEV0E7RUFDSTtJQUNJLGFBQUE7RUNSTjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jb250YWluZXItcmlnaHQvY29udGFpbmVyLXJpZ2h0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3QtY29udGV4dCB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuLmxvZ2luLWNvbnRhaW5lci0tcmlnaHQge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xyXG4gICAgYWxpZ24tY29udGVudDogZmxleC1zdGFydDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG5cclxuICAgIC8vIGhlaWdodDogMTAwdmg7XHJcbiAgICBoZWlnaHQ6IDgyOHB4O1xyXG4gICAgLy8gd2lkdGg6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uLy4uL2Fzc2V0cy9ub3RlYm9vay5qcGcnKSBjZW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG59XHJcblxyXG4ubG9nbyB7XHJcbiAgICB3aWR0aDogMzAlO1xyXG4gICAgcGFkZGluZy10b3A6IDNyZW07XHJcbn1cclxuXHJcbi8vIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDQ4MHB4KSB7XHJcbi8vICAgICBkaXYubG9naW4tY29udGFpbmVyLXJpZ2h0IHtcclxuLy8gICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4vLyAgICAgfVxyXG4vLyB9XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogMTIwMHB4KSB7XHJcbiAgICBkaXYuY29udGFpbmVyLS1yaWdodCB7XHJcbiAgICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxufVxyXG4iLCI6aG9zdC1jb250ZXh0IHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi5sb2dpbi1jb250YWluZXItLXJpZ2h0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gIGFsaWduLWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBoZWlnaHQ6IDgyOHB4O1xuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvbm90ZWJvb2suanBnXCIpIGNlbnRlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cblxuLmxvZ28ge1xuICB3aWR0aDogMzAlO1xuICBwYWRkaW5nLXRvcDogM3JlbTtcbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICBkaXYuY29udGFpbmVyLS1yaWdodCB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxufSJdfQ== */";
     /***/
   },
 
@@ -1362,6 +1461,205 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/components/label/label.component.scss":
+  /*!*******************************************************!*\
+    !*** ./src/app/components/label/label.component.scss ***!
+    \*******************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsLabelLabelComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbGFiZWwvbGFiZWwuY29tcG9uZW50LnNjc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/label/label.component.ts":
+  /*!*****************************************************!*\
+    !*** ./src/app/components/label/label.component.ts ***!
+    \*****************************************************/
+
+  /*! exports provided: LabelComponent */
+
+  /***/
+  function srcAppComponentsLabelLabelComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LabelComponent", function () {
+      return LabelComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @adobe/aem-angular-editable-components */
+    "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_label_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/label.service */
+    "./src/app/label.service.ts");
+
+    var LabelComponent = /*#__PURE__*/function () {
+      function LabelComponent(labelService) {
+        var _this3 = this;
+
+        _classCallCheck(this, LabelComponent);
+
+        this.labelService = labelService;
+        this.isInvalidLogin = false;
+        this.labelService.getInvalidLogin().subscribe(function (invalid) {
+          _this3.isInvalidLogin = invalid;
+        });
+      }
+
+      _createClass(LabelComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return LabelComponent;
+    }();
+
+    LabelComponent.ctorParameters = function () {
+      return [{
+        type: src_app_label_service__WEBPACK_IMPORTED_MODULE_3__["LabelService"]
+      }];
+    };
+
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()], LabelComponent.prototype, "label", void 0);
+    LabelComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+      selector: 'app-label',
+      template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! raw-loader!./label.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/label/label.component.html"))["default"],
+      styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! ./label.component.scss */
+      "./src/app/components/label/label.component.scss"))["default"]]
+    })], LabelComponent);
+    Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])('angularapp/components/label-component')(LabelComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/components/link/link.component.scss":
+  /*!*****************************************************!*\
+    !*** ./src/app/components/link/link.component.scss ***!
+    \*****************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsLinkLinkComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbGluay9saW5rLmNvbXBvbmVudC5zY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/link/link.component.ts":
+  /*!***************************************************!*\
+    !*** ./src/app/components/link/link.component.ts ***!
+    \***************************************************/
+
+  /*! exports provided: LinkComponent */
+
+  /***/
+  function srcAppComponentsLinkLinkComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LinkComponent", function () {
+      return LinkComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @adobe/aem-angular-editable-components */
+    "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var LinkComponent = /*#__PURE__*/function () {
+      function LinkComponent() {
+        _classCallCheck(this, LinkComponent);
+      }
+
+      _createClass(LinkComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "onClick",
+        value: function onClick() {
+          if (this.label === 'logout') {
+            console.log('logout ....');
+          } else {
+            console.log('refresh na página');
+          }
+        }
+      }]);
+
+      return LinkComponent;
+    }();
+
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()], LinkComponent.prototype, "label", void 0);
+    LinkComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+      selector: 'app-link',
+      template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! raw-loader!./link.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/link/link.component.html"))["default"],
+      styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! ./link.component.scss */
+      "./src/app/components/link/link.component.scss"))["default"]]
+    })], LinkComponent);
+    Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])('angularapp/components/link-component')(LinkComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/components/model-manager.service.ts":
   /*!*****************************************************!*\
     !*** ./src/app/components/model-manager.service.ts ***!
@@ -1493,7 +1791,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./src/app/components/model-manager.service.ts");
 
     var PageComponent = /*#__PURE__*/_createClass(function PageComponent(route, modelManagerService) {
-      var _this3 = this;
+      var _this4 = this;
 
       _classCallCheck(this, PageComponent);
 
@@ -1502,9 +1800,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.modelManagerService.getData({
         path: this.route.snapshot.data.path
       }).then(function (data) {
-        _this3.path = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].PATH_PROP];
-        _this3.items = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_PROP];
-        _this3.itemsOrder = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_ORDER_PROP];
+        _this4.path = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].PATH_PROP];
+        _this4.items = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_PROP];
+        _this4.itemsOrder = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_ORDER_PROP];
       });
     });
 
@@ -1549,6 +1847,116 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
 
     Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_0__["MapTo"])("wcm/foundation/components/responsivegrid")(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_0__["AEMResponsiveGridComponent"]);
+    /***/
+  },
+
+  /***/
+  "./src/app/components/search/search.component.scss":
+  /*!*********************************************************!*\
+    !*** ./src/app/components/search/search.component.scss ***!
+    \*********************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsSearchSearchComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".search {\n  width: 453px;\n  height: 45px;\n  background: #26292c;\n  border: 1px solid #ffffff;\n  box-sizing: border-box;\n  border-radius: 50px;\n  margin-top: 0.5em;\n  text-indent: 2em;\n}\n\n::-moz-placeholder {\n  color: white;\n}\n\n:-ms-input-placeholder {\n  color: white;\n}\n\n::placeholder {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zZWFyY2gvQzpcXFVzZXJzXFx2YWxiZXIudmFzY29uY2Vsb3NcXERvY3VtZW50c1xcQUVNXFxQcm9qZXRvc1xcYWVtLWFuZ3VsYXItbG9naW4tY2hhbGxlbmdlXFx1aS5mcm9udGVuZC9zcmNcXGFwcFxcY29tcG9uZW50c1xcc2VhcmNoXFxzZWFyY2guY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvc2VhcmNoL3NlYXJjaC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0FDQ0o7O0FERUE7RUFDSSxZQUFBO0FDQ0o7O0FERkE7RUFDSSxZQUFBO0FDQ0o7O0FERkE7RUFDSSxZQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NlYXJjaC9zZWFyY2guY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VhcmNoIHtcclxuICAgIHdpZHRoOiA0NTNweDtcclxuICAgIGhlaWdodDogNDVweDtcclxuICAgIGJhY2tncm91bmQ6ICMyNjI5MmM7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjZmZmZmZmO1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbiAgICBtYXJnaW4tdG9wOiAwLjVlbTtcclxuICAgIHRleHQtaW5kZW50OiAyZW07XHJcbn1cclxuXHJcbjo6cGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbiIsIi5zZWFyY2gge1xuICB3aWR0aDogNDUzcHg7XG4gIGhlaWdodDogNDVweDtcbiAgYmFja2dyb3VuZDogIzI2MjkyYztcbiAgYm9yZGVyOiAxcHggc29saWQgI2ZmZmZmZjtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm9yZGVyLXJhZGl1czogNTBweDtcbiAgbWFyZ2luLXRvcDogMC41ZW07XG4gIHRleHQtaW5kZW50OiAyZW07XG59XG5cbjo6cGxhY2Vob2xkZXIge1xuICBjb2xvcjogd2hpdGU7XG59Il19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/search/search.component.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/components/search/search.component.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: SearchComponent */
+
+  /***/
+  function srcAppComponentsSearchSearchComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SearchComponent", function () {
+      return SearchComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @adobe/aem-angular-editable-components */
+    "./node_modules/@adobe/aem-angular-editable-components/__ivy_ngcc__/fesm2015/adobe-aem-angular-editable-components.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+
+    var SearchComponent = /*#__PURE__*/function () {
+      function SearchComponent() {
+        _classCallCheck(this, SearchComponent);
+
+        this.valueChanged = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
+      }
+
+      _createClass(SearchComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this5 = this;
+
+          this.valueChanged.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["debounceTime"])(1000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["distinctUntilChanged"])()).subscribe(function (model) {
+            _this5.value = model;
+          });
+        }
+      }, {
+        key: "onChange",
+        value: function onChange(value) {
+          this.valueChanged.next(value);
+        }
+      }]);
+
+      return SearchComponent;
+    }();
+
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()], SearchComponent.prototype, "placeholder", void 0);
+    SearchComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+      selector: 'app-search',
+      template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! raw-loader!./search.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/search/search.component.html"))["default"],
+      styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+      /*! ./search.component.scss */
+      "./src/app/components/search/search.component.scss"))["default"]]
+    })], SearchComponent);
+    Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])('angularapp/components/search-component')(SearchComponent);
     /***/
   },
 
@@ -1627,10 +2035,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(WeatherComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this4 = this;
+          var _this6 = this;
 
           this.weatherService.getWeather().subscribe(function (weather) {
-            _this4.weather = weather;
+            _this6.weather = weather;
           });
         }
       }]);
@@ -1714,7 +2122,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(WeatherService, [{
         key: "getWeather",
         value: function getWeather() {
-          var _this5 = this;
+          var _this7 = this;
 
           var location = {
             lat: -30.0331,
@@ -1735,7 +2143,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var weather = {
               location: "".concat(res.name, " - RS"),
               temperature: "".concat(res.main.temp.toFixed(0), "\xB0"),
-              imageSrc: _this5.getWeatherIcon("".concat(res.weather[0].icon, ".png"))
+              imageSrc: _this7.getWeatherIcon("".concat(res.weather[0].icon, ".png"))
             };
             return weather;
           }));
@@ -1759,6 +2167,72 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     WeatherService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])({
       providedIn: 'root'
     })], WeatherService);
+    /***/
+  },
+
+  /***/
+  "./src/app/label.service.ts":
+  /*!**********************************!*\
+    !*** ./src/app/label.service.ts ***!
+    \**********************************/
+
+  /*! exports provided: LabelService */
+
+  /***/
+  function srcAppLabelServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "LabelService", function () {
+      return LabelService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+
+    var LabelService = /*#__PURE__*/function () {
+      function LabelService() {
+        _classCallCheck(this, LabelService);
+
+        this.invalidLogin = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](false);
+      }
+
+      _createClass(LabelService, [{
+        key: "setInvalidLogin",
+        value: function setInvalidLogin(isInvalid) {
+          this.invalidLogin.next(isInvalid);
+        }
+      }, {
+        key: "getInvalidLogin",
+        value: function getInvalidLogin() {
+          return this.invalidLogin.asObservable();
+        }
+      }]);
+
+      return LabelService;
+    }();
+
+    LabelService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], LabelService);
     /***/
   },
 

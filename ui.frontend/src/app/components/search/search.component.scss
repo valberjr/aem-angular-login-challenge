@@ -1,0 +1,14 @@
+.search {
+    width: 453px;
+    height: 45px;
+    background: #26292c;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 0.5em;
+    text-indent: 2em;
+}
+
+::placeholder {
+    color: white;
+}

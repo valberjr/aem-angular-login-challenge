@@ -36,4 +36,7 @@ public interface ButtonComponent
     @JsonProperty("label")
     String getLabel();
 
+    @JsonProperty("url")
+    String getUrl();
+
 }
