@@ -1,0 +1,65 @@
+.footer-container {
+    display: flex;
+
+    background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+}
+
+.footer-item {
+    flex: 1;
+
+    font-family: 'Mark Pro';
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+
+    &.footer-text-essa-janela {
+        width: 541px;
+    }
+
+    &.footer-vertical-line {
+        width: 61px;
+        height: 0px;
+        border: 1px solid #ffffff;
+        transform: rotate(90deg);
+    }
+
+    > span.footer-text-application {
+        width: 109px;
+        height: 49px;
+
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+    }
+
+    > &.footer-text-refresh {
+        width: 81px;
+        height: 56px;
+        font-family: 'Roboto';
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    &.footer-link-continuar {
+        width: 131px;
+        height: 99px;
+        left: 1661px;
+        top: 981px;
+        background: #ffffff;
+    }
+
+    &.footer-link-logout {
+        width: 89px;
+        height: 55px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        align-items: center;
+        text-align: center;
+    }
+}

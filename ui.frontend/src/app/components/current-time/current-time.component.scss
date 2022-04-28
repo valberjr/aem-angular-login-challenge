@@ -1,16 +1,24 @@
-.time {
-    font-family: 'Mark Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 7em;
-    line-height: 7rem;
-    color: #222222;
-}
+.current-time-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 
-.date {
-    font-family: 'Mark Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    color: #222222;
+    > div {
+        font-family: 'Mark Pro';
+        font-style: normal;
+        color: #222222;
+    }
+
+    > div.current-time-time {
+        font-weight: 700;
+        font-size: 7em;
+        line-height: 7rem;
+    }
+
+    > div.current-time-date {
+        font-weight: 400;
+        font-size: 14px;
+    }
 }

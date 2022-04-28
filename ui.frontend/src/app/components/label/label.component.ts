@@ -12,13 +12,13 @@ export class LabelComponent implements OnInit {
 
     isInvalidLogin = false;
 
-    constructor(private labelService: LabelService) {
+    constructor(private labelService: LabelService) {}
+
+    ngOnInit(): void {
         this.labelService.getInvalidLogin().subscribe((invalid) => {
             this.isInvalidLogin = invalid;
         });
     }
-
-    ngOnInit(): void {}
 }
 
 MapTo('angularapp/components/label-component')(LabelComponent);

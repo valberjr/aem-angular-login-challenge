@@ -566,7 +566,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_446125454511900
-                    jcr:lastModified="{Date}2022-04-27T17:17:40.388-03:00"
+                    jcr:lastModified="{Date}2022-04-28T14:37:28.939-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Containers"
@@ -585,49 +585,34 @@
                                     cq:styleLabel="Login Container"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item1
-                                    cq:styleClasses="login-container-text"
-                                    cq:styleId="1650465713738"
-                                    cq:styleLabel="Login Container Text"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item2
                                     cq:styleClasses="login-container-form"
                                     cq:styleId="1650466403973"
                                     cq:styleLabel="Login Container Form"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item3
+                                <item2
                                     cq:styleClasses="home-container"
                                     cq:styleId="1650910322865"
                                     cq:styleLabel="Home Container"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item4
+                                <item3
                                     cq:styleClasses="home-container-header"
                                     cq:styleId="1650911304368"
                                     cq:styleLabel="Home Container Header"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item5
+                                <item4
                                     cq:styleClasses="home-container-center"
                                     cq:styleId="1650912408120"
                                     cq:styleLabel="Home Container Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item5
+                                    cq:styleClasses="home-container-texts"
+                                    cq:styleId="1651167430094"
+                                    cq:styleLabel="Home Container Texts"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item6
                                     cq:styleClasses="home-container-footer"
                                     cq:styleId="1650912412612"
                                     cq:styleLabel="Home Container Footer"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item7
-                                    cq:styleClasses="home-container-right"
-                                    cq:styleId="1650916822185"
-                                    cq:styleLabel="Home Container Right"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item8
-                                    cq:styleClasses="footer-container"
-                                    cq:styleId="1650977720918"
-                                    cq:styleLabel="Footer Container"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item9
-                                    cq:styleClasses="login-container-right"
-                                    cq:styleId="1651090642018"
-                                    cq:styleLabel="Login Container Right"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>

@@ -35,6 +35,8 @@ import { WeatherComponent } from './components/weather/weather.component';
 import { SearchComponent } from './components/search/search.component';
 import { LinkComponent } from './components/link/link.component';
 import { LabelComponent } from './components/label/label.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
     imports: [
@@ -78,6 +80,8 @@ import { LabelComponent } from './components/label/label.component';
         SearchComponent,
         LinkComponent,
         LabelComponent,
+        FooterComponent,
+        CounterComponent,
     ],
     entryComponents: [
         PageComponent,
@@ -89,6 +93,7 @@ import { LabelComponent } from './components/label/label.component';
         SearchComponent,
         LinkComponent,
         LabelComponent,
+        FooterComponent,
     ],
     bootstrap: [AppComponent],
 })

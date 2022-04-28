@@ -1,7 +1,7 @@
-<div fxLayout="column">
-    <div fxLayoutAlign="end" class="city">{{ weather.location }}</div>
-    <div fxLayoutAlign="end">
-        <img class="icon" [src]="weather.imageSrc" alt="weather-icon" />
-        <div class="temp">{{ weather.temperature }}</div>
+<div class="weather-container">
+    <div class="weather-city">{{ weather.location }}</div>
+    <div class="weather-container-icon-temp">
+        <img class="weather-icon" [src]="weather.imageSrc" alt="weather-icon" />
+        <div class="weather-temp">{{ weather.temperature }}</div>
     </div>
 </div>

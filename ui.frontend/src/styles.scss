@@ -4,9 +4,11 @@
 @import url('http://fonts.cdnfonts.com/css/mark-pro?styles=78509,78511');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&dis');
 
+html,
 body {
     // height: 100vh;
     // height: 744px;
+    height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -55,4 +57,107 @@ body {
         height: 744px;
         background-size: cover;
     }
+}
+
+/* Home */
+
+.home-container {
+}
+
+.home-container-header {
+    display: flex;
+    align-items: center;
+
+    .logo-compasso > div > img {
+        max-width: 50%;
+        margin-left: 5rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        div.current-time-container {
+            display: none;
+        }
+    }
+}
+
+.home-container-center {
+    .logo-compasso-bola > div > img {
+        display: flex;
+        //position: absolute;
+        margin-left: -250px;
+        max-width: 100%;
+    }
+}
+
+.home-container-texts {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10em;
+
+    p {
+        text-align: end;
+        font-family: 'Mark Pro';
+        font-style: normal;
+    }
+
+    .home-text-our > p {
+        font-weight: 700;
+        font-size: 36px;
+        color: #c12d18;
+    }
+
+    .home-text-nossa > p {
+        font-weight: 400;
+        font-size: 24px;
+        color: #222222;
+    }
+
+    .home-text-to-transform > p {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 40px;
+        color: #c12d18;
+    }
+
+    .home-text-transformar > p {
+        font-weight: 400;
+        font-size: 24px;
+        color: #222222;
+    }
+
+    .home-text-building > p {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 50px;
+        color: #c12d18;
+    }
+
+    .home-text-construindo > p {
+        font-weight: 400;
+        font-size: 24px;
+        color: #222222;
+    }
+
+    .home-text-that > p {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 50px;
+        color: #c12d18;
+    }
+
+    .home-text-que > p {
+        font-weight: 400;
+        font-size: 24px;
+        color: #222222;
+    }
+}
+
+// @media screen and (max-width: 1200px) {
+//     .home-container-texts {
+//         display: none;
+//     }
+// }
+
+.home-footer-container {
 }
