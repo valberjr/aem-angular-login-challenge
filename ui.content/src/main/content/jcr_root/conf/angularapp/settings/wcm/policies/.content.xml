@@ -75,7 +75,7 @@
                     </plugins>
                 </policy_651483963895698>
                 <policy_200336340075300
-                    jcr:lastModified="{Date}2022-04-26T15:35:11.670-03:00"
+                    jcr:lastModified="{Date}2022-04-28T08:44:09.833-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Image"
@@ -131,6 +131,11 @@
                                     cq:styleClasses="logo-compasso-bola"
                                     cq:styleId="1650657344335"
                                     cq:styleLabel="Logo Compasso Bola"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="login-background"
+                                    cq:styleId="1651093876406"
+                                    cq:styleLabel="Login Background"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
