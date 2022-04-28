@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-28T09:32:27.020-03:00"
+        cq:lastModified="{Date}2022-04-28T09:41:57.332-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/angularapp/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -19,6 +19,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <container
+                    cq:styleIds="[1650309819235]"
                     jcr:created="{Date}2022-04-28T08:13:26.873-03:00"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2022-04-28T08:13:26.873-03:00"
@@ -113,11 +114,12 @@
                             <button_component
                                 jcr:created="{Date}2022-04-28T08:23:53.130-03:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T08:24:05.026-03:00"
+                                jcr:lastModified="{Date}2022-04-28T09:40:38.944-03:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="angularapp/components/button-component"
-                                label="Continuar"/>
+                                label="Continuar"
+                                url="/content/angularapp/us/en/home"/>
                             <cq:responsive jcr:primaryType="nt:unstructured">
                                 <default
                                     jcr:primaryType="nt:unstructured"
