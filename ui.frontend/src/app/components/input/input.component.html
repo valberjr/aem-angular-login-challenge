@@ -1,9 +1,14 @@
-<input
-    class="input"
-    [type]="type"
-    [name]="name"
-    [placeholder]="placeholder"
-    [(ngModel)]="value"
-    (ngModelChange)="onChange($event)"
-    required
-/>
+<div class="input__div">
+    <mat-icon aria-hidden="false" aria-label="inpu icons">
+        {{ icon }}
+    </mat-icon>
+    <input
+        class="input__input"
+        [type]="type"
+        [name]="name"
+        [placeholder]="placeholder"
+        [(ngModel)]="value"
+        (ngModelChange)="onChange($event)"
+        required
+    />
+</div>

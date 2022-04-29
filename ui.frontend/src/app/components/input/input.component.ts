@@ -14,6 +14,7 @@ export class InputComponent implements OnInit {
     @Input() placeholder: string;
 
     name: string;
+    icon: string;
     value: string;
     valueChanged: Subject<string> = new Subject<string>();
 
@@ -21,6 +22,8 @@ export class InputComponent implements OnInit {
 
     ngOnInit(): void {
         this.name = this.type === 'text' ? 'username' : 'password';
+        this.icon = this.type === 'text' ? 'person' : 'lock';
+
         this.localStorageService.clear();
 
         this.valueChanged
