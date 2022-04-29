@@ -6,25 +6,44 @@
 
 html,
 body {
-    // height: 100vh;
-    // height: 744px;
-    height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
+/* Login Page */
+
 .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
     background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     font-family: 'Mark Pro';
     font-style: normal;
     font-weight: 400;
     color: #e0e0e0;
-    // height: 100vh;
-    height: 744px;
 }
 
-.login-container-form {
-    margin-top: 8em;
+.login-container-form-image {
+    display: none;
+    width: 306px;
+    height: 69px;
+    background: url('/content/dam/angularapp/e959f2f20202d40e5f950e778d565743.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.login-image-container {
+    background: url('/content/dam/angularapp/f7361f224fa873f2f0878af28a00fbf1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
 }
 
 .login-text-ola {
@@ -43,19 +62,20 @@ body {
     margin-top: 2em;
 }
 
-@media (max-width: 1200px) {
-    .login-background {
-        > div > img {
-            display: none;
-        }
+.logo-compasso-login {
+    display: flex;
+    padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+    .login-container-form-image {
+        display: block;
     }
 }
 
-.login-background {
-    > div > img {
-        // height: 100vh;
-        height: 744px;
-        background-size: cover;
+@media (max-width: 768px) {
+    .login-image-container {
+        display: none;
     }
 }
 

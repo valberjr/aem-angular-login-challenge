@@ -111,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<span>{{ currentValue }}</span>\n";
+    __webpack_exports__["default"] = "<!-- <p>{{ currentValue }} seconds</p> -->\n<div>\n    <div class=\"counter-item counter-item__span-number-seconds\">\n        {{ currentValue }}\n    </div>\n    <div class=\"counter-item counter-item__span-text-seconds\">seconds</div>\n</div>\n";
     /***/
   },
 
@@ -151,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"footer-container\">\n    <span class=\"footer-item footer-text-essa-janela\">\n        Essa janela do navegador é usada para manter sua sessão de autenticação\n        ativa. Deixe-a aberta em segundo plano e abra uma nova janela para\n        continuar a navegar.\n    </span>\n\n    <span class=\"footer-item footer-vertical-line\"></span>\n\n    <app-search class=\"footer-item\"></app-search>\n\n    <span class=\"footer-item footer-vertical-line\"></span>\n\n    <span class=\"footer-item footer-text-application\">\n        Application refresh in\n    </span>\n\n    <app-counter class=\"footer-item\"></app-counter>\n\n    <div class=\"footer-item footer-link-continuar\">\n        <a href=\"#\">Cotninuar navegando</a>\n    </div>\n\n    <span class=\"footer-item\">\n        <a href=\"#\" routerLink=\"/content/angularapp/us/en/login.html\">logout</a>\n    </span>\n</div>\n";
+    __webpack_exports__["default"] = "<div>\n    <p class=\"footer footer__item--p-essa-janela\">\n        Essa janela do navegador é usada para manter sua sessão de autenticação\n        ativa. Deixe-a aberta em segundo plano e abra uma nova janela para\n        continuar a navegar.\n    </p>\n\n    <app-search class=\"footer footer__item--app-search\"></app-search>\n\n    <p class=\"footer footer__item--p-application-refresh\">\n        Application refresh in\n    </p>\n\n    <app-counter class=\"footer footer__item--app-counter\"></app-counter>\n\n    <a\n        class=\"footer footer__item--a-continuar-navegando\"\n        (click)=\"keepBrowsing()\"\n    >\n        Continuar navegando\n    </a>\n\n    <a class=\"footer\" (click)=\"logout()\">logout</a>\n</div>\n";
     /***/
   },
 
@@ -171,7 +171,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<input\n    class=\"input\"\n    [type]=\"type\"\n    [name]=\"name\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"value\"\n    (ngModelChange)=\"onChange($event)\"\n    required\n/>\n";
+    __webpack_exports__["default"] = "<div class=\"input__div\">\n    <mat-icon aria-hidden=\"false\" aria-label=\"inpu icons\">\n        {{ icon }}\n    </mat-icon>\n    <input\n        class=\"input__input\"\n        [type]=\"type\"\n        [name]=\"name\"\n        [placeholder]=\"placeholder\"\n        [(ngModel)]=\"value\"\n        (ngModelChange)=\"onChange($event)\"\n        required\n    />\n</div>\n";
     /***/
   },
 
@@ -251,7 +251,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<input\n    class=\"search\"\n    type=\"text\"\n    name=\"search\"\n    [placeholder]=\"placeholder\"\n    [(ngModel)]=\"value\"\n    (ngModelChange)=\"onChange($event)\"\n/>\n";
+    __webpack_exports__["default"] = "<div class=\"search__div\">\n    <mat-icon aria-hidden=\"false\" aria-label=\"person search icon\">\n        person_search\n    </mat-icon>\n    <input\n        class=\"search__input\"\n        type=\"text\"\n        name=\"search\"\n        [placeholder]=\"placeholder\"\n        [(ngModel)]=\"value\"\n        (ngModelChange)=\"onChange($event)\"\n    />\n</div>\n";
     /***/
   },
 
@@ -1004,7 +1004,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY291bnRlci9jb3VudGVyLmNvbXBvbmVudC5zY3NzIn0= */";
+    __webpack_exports__["default"] = "div {\n  display: flex;\n  flex-direction: column;\n  font-style: normal;\n  font-weight: 400;\n  color: #ffffff;\n}\n\n.counter-item {\n  flex: 1;\n}\n\n.counter-item.counter-item__span-number-seconds {\n  font-family: \"Roboto\";\n  font-size: 48px;\n  text-align: center;\n}\n\n.counter-item.counter-item__span-text-seconds {\n  font-family: \"Mark Pro\";\n  font-size: 14px;\n  text-align: center;\n  padding-top: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb3VudGVyL0M6XFxVc2Vyc1xcdmFsYmVyLnZhc2NvbmNlbG9zXFxEb2N1bWVudHNcXEFFTVxcUHJvamV0b3NcXGFlbS1hbmd1bGFyLWxvZ2luLWNoYWxsZW5nZVxcdWkuZnJvbnRlbmQvc3JjXFxhcHBcXGNvbXBvbmVudHNcXGNvdW50ZXJcXGNvdW50ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvY291bnRlci9jb3VudGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0VBRUEsa0JBQUE7RUFDQSxnQkFBQTtFQUVBLGNBQUE7QUNESjs7QURJQTtFQUNJLE9BQUE7QUNESjs7QURHSTtFQUNJLHFCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0FDRFI7O0FESUk7RUFDSSx1QkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0FDRlIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvdW50ZXIvY291bnRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuXHJcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICBmb250LXdlaWdodDogNDAwO1xyXG5cclxuICAgIGNvbG9yOiAjZmZmZmZmO1xyXG59XHJcblxyXG4uY291bnRlci1pdGVtIHtcclxuICAgIGZsZXg6IDE7XHJcblxyXG4gICAgJi5jb3VudGVyLWl0ZW1fX3NwYW4tbnVtYmVyLXNlY29uZHMge1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJztcclxuICAgICAgICBmb250LXNpemU6IDQ4cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG5cclxuICAgICYuY291bnRlci1pdGVtX19zcGFuLXRleHQtc2Vjb25kcyB7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6ICdNYXJrIFBybyc7XHJcbiAgICAgICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICBwYWRkaW5nLXRvcDogMTVweDtcclxuICAgIH1cclxufVxyXG4iLCJkaXYge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIGNvbG9yOiAjZmZmZmZmO1xufVxuXG4uY291bnRlci1pdGVtIHtcbiAgZmxleDogMTtcbn1cbi5jb3VudGVyLWl0ZW0uY291bnRlci1pdGVtX19zcGFuLW51bWJlci1zZWNvbmRzIHtcbiAgZm9udC1mYW1pbHk6IFwiUm9ib3RvXCI7XG4gIGZvbnQtc2l6ZTogNDhweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmNvdW50ZXItaXRlbS5jb3VudGVyLWl0ZW1fX3NwYW4tdGV4dC1zZWNvbmRzIHtcbiAgZm9udC1mYW1pbHk6IFwiTWFyayBQcm9cIjtcbiAgZm9udC1zaXplOiAxNHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmctdG9wOiAxNXB4O1xufSJdfQ== */";
     /***/
   },
 
@@ -1042,25 +1042,37 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! rxjs */
     "./node_modules/rxjs/_esm2015/index.js");
     /* harmony import */
 
 
-    var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! rxjs/operators */
     "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var src_app_local_storage_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! src/app/local-storage.service */
+    "./src/app/local-storage.service.ts");
 
     var CounterComponent = /*#__PURE__*/function () {
-      function CounterComponent(changeDetector) {
+      function CounterComponent(changeDetector, router, localStorageService) {
         _classCallCheck(this, CounterComponent);
 
         this.changeDetector = changeDetector;
-        this.startAt = 1;
-        this.showTimeRemaining = true;
+        this.router = router;
+        this.localStorageService = localStorageService;
         this.counterState = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.currentValue = '';
+        this.reset = false;
       }
 
       _createClass(CounterComponent, [{
@@ -1071,39 +1083,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function start() {
           var _this2 = this;
 
-          this.currentValue = this.formatValue(this.startAt);
+          var time = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["interval"])(1000);
+          this.currentValue = this.startAt;
           this.changeDetector.detectChanges();
-          var t = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["interval"])(1000);
-          this.currentSubscription = t.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(this.startAt), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (v) {
+          this.currentSubscription = time.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(this.startAt), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (v) {
             return _this2.startAt - (v + 1);
-          })).subscribe(function (v) {
-            _this2.currentValue = _this2.formatValue(v);
+          }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["finalize"])(function () {
+            if (!_this2.reset) {
+              _this2.stop();
 
-            _this2.changeDetector.detectChanges();
-          }, function () {
-            _this2.currentSubscription.unsubscribe();
+              _this2.localStorageService.clear();
 
-            _this2.currentValue = '000';
-
-            _this2.counterState.emit('COMPLETE');
+              _this2.router.navigate(['/content/angularapp/us/en/login.html']);
+            }
+          })).subscribe(function (value) {
+            _this2.reset = false;
+            _this2.currentValue = value;
 
             _this2.changeDetector.detectChanges();
           });
         }
       }, {
-        key: "formatValue",
-        value: function formatValue(v) {
-          var minutes = Math.floor(v / 60);
-          var formattedMinutes = '' + (minutes > 9 ? minutes : '0' + minutes);
-          var seconds = v % 60;
-          var formattedSeconds = '' + (seconds > 9 ? seconds : '0' + seconds);
-          return "".concat(formattedMinutes, ":").concat(formattedSeconds);
-        }
-      }, {
         key: "stop",
         value: function stop() {
           this.currentSubscription.unsubscribe();
-          this.counterState.emit('ABORTED');
         }
       }]);
 
@@ -1113,11 +1116,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     CounterComponent.ctorParameters = function () {
       return [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }, {
+        type: src_app_local_storage_service__WEBPACK_IMPORTED_MODULE_5__["LocalStorageService"]
       }];
     };
 
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()], CounterComponent.prototype, "startAt", void 0);
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()], CounterComponent.prototype, "showTimeRemaining", void 0);
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()], CounterComponent.prototype, "counterState", void 0);
     CounterComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-counter',
@@ -1325,7 +1331,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".footer-container {\n  display: flex;\n  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);\n  color: #ffffff;\n}\n\n.footer-item {\n  flex: 1;\n  font-family: \"Mark Pro\";\n  font-style: normal;\n  font-weight: 400;\n  color: #ffffff;\n}\n\n.footer-item.footer-text-essa-janela {\n  width: 541px;\n}\n\n.footer-item.footer-vertical-line {\n  width: 61px;\n  height: 0px;\n  border: 1px solid #ffffff;\n  transform: rotate(90deg);\n}\n\n.footer-item > span.footer-text-application {\n  width: 109px;\n  height: 49px;\n  font-size: 14px;\n  line-height: 18px;\n  text-align: right;\n}\n\n> .footer-item.footer-text-refresh {\n  width: 81px;\n  height: 56px;\n  font-family: \"Roboto\";\n  font-size: 48px;\n  line-height: 56px;\n  text-align: center;\n}\n\n.footer-item.footer-link-continuar {\n  width: 131px;\n  height: 99px;\n  left: 1661px;\n  top: 981px;\n  background: #ffffff;\n}\n\n.footer-item.footer-link-logout {\n  width: 89px;\n  height: 55px;\n  font-weight: 700;\n  font-size: 12px;\n  line-height: 15px;\n  align-items: center;\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9mb290ZXIvQzpcXFVzZXJzXFx2YWxiZXIudmFzY29uY2Vsb3NcXERvY3VtZW50c1xcQUVNXFxQcm9qZXRvc1xcYWVtLWFuZ3VsYXItbG9naW4tY2hhbGxlbmdlXFx1aS5mcm9udGVuZC9zcmNcXGFwcFxcY29tcG9uZW50c1xcZm9vdGVyXFxmb290ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQUE7RUFFQSwrREFBQTtFQUNBLGNBQUE7QUNBSjs7QURNQTtFQUNJLE9BQUE7RUFFQSx1QkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0FDSko7O0FETUk7RUFDSSxZQUFBO0FDSlI7O0FET0k7RUFDSSxXQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0VBQ0Esd0JBQUE7QUNMUjs7QURRSTtFQUNJLFlBQUE7RUFDQSxZQUFBO0VBRUEsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsaUJBQUE7QUNQUjs7QURVSTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBQ1JSOztBRFdJO0VBQ0ksWUFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLG1CQUFBO0FDVFI7O0FEWUk7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQ1ZSIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3Rlci1jb250YWluZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuXHJcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTAuMTZkZWcsICMzMzM4M2QgMCUsICMxYzFkMjAgMTAwJSk7XHJcbiAgICBjb2xvcjogI2ZmZmZmZjtcclxuICAgIC8vIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIC8vIGJvdHRvbTogMDtcclxuICAgIC8vIGhlaWdodDogMTAwcHg7XHJcbn1cclxuXHJcbi5mb290ZXItaXRlbSB7XHJcbiAgICBmbGV4OiAxO1xyXG5cclxuICAgIGZvbnQtZmFtaWx5OiAnTWFyayBQcm8nO1xyXG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgIGNvbG9yOiAjZmZmZmZmO1xyXG5cclxuICAgICYuZm9vdGVyLXRleHQtZXNzYS1qYW5lbGEge1xyXG4gICAgICAgIHdpZHRoOiA1NDFweDtcclxuICAgIH1cclxuXHJcbiAgICAmLmZvb3Rlci12ZXJ0aWNhbC1saW5lIHtcclxuICAgICAgICB3aWR0aDogNjFweDtcclxuICAgICAgICBoZWlnaHQ6IDBweDtcclxuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjZmZmZmZmO1xyXG4gICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcclxuICAgIH1cclxuXHJcbiAgICA+IHNwYW4uZm9vdGVyLXRleHQtYXBwbGljYXRpb24ge1xyXG4gICAgICAgIHdpZHRoOiAxMDlweDtcclxuICAgICAgICBoZWlnaHQ6IDQ5cHg7XHJcblxyXG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogMThweDtcclxuICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIH1cclxuXHJcbiAgICA+ICYuZm9vdGVyLXRleHQtcmVmcmVzaCB7XHJcbiAgICAgICAgd2lkdGg6IDgxcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA1NnB4O1xyXG4gICAgICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJztcclxuICAgICAgICBmb250LXNpemU6IDQ4cHg7XHJcbiAgICAgICAgbGluZS1oZWlnaHQ6IDU2cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG5cclxuICAgICYuZm9vdGVyLWxpbmstY29udGludWFyIHtcclxuICAgICAgICB3aWR0aDogMTMxcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA5OXB4O1xyXG4gICAgICAgIGxlZnQ6IDE2NjFweDtcclxuICAgICAgICB0b3A6IDk4MXB4O1xyXG4gICAgICAgIGJhY2tncm91bmQ6ICNmZmZmZmY7XHJcbiAgICB9XHJcblxyXG4gICAgJi5mb290ZXItbGluay1sb2dvdXQge1xyXG4gICAgICAgIHdpZHRoOiA4OXB4O1xyXG4gICAgICAgIGhlaWdodDogNTVweDtcclxuICAgICAgICBmb250LXdlaWdodDogNzAwO1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTJweDtcclxuICAgICAgICBsaW5lLWhlaWdodDogMTVweDtcclxuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxufVxyXG4iLCIuZm9vdGVyLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCg5MC4xNmRlZywgIzMzMzgzZCAwJSwgIzFjMWQyMCAxMDAlKTtcbiAgY29sb3I6ICNmZmZmZmY7XG59XG5cbi5mb290ZXItaXRlbSB7XG4gIGZsZXg6IDE7XG4gIGZvbnQtZmFtaWx5OiBcIk1hcmsgUHJvXCI7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgY29sb3I6ICNmZmZmZmY7XG59XG4uZm9vdGVyLWl0ZW0uZm9vdGVyLXRleHQtZXNzYS1qYW5lbGEge1xuICB3aWR0aDogNTQxcHg7XG59XG4uZm9vdGVyLWl0ZW0uZm9vdGVyLXZlcnRpY2FsLWxpbmUge1xuICB3aWR0aDogNjFweDtcbiAgaGVpZ2h0OiAwcHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNmZmZmZmY7XG4gIHRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcbn1cbi5mb290ZXItaXRlbSA+IHNwYW4uZm9vdGVyLXRleHQtYXBwbGljYXRpb24ge1xuICB3aWR0aDogMTA5cHg7XG4gIGhlaWdodDogNDlweDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBsaW5lLWhlaWdodDogMThweDtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG59XG4+IC5mb290ZXItaXRlbS5mb290ZXItdGV4dC1yZWZyZXNoIHtcbiAgd2lkdGg6IDgxcHg7XG4gIGhlaWdodDogNTZweDtcbiAgZm9udC1mYW1pbHk6IFwiUm9ib3RvXCI7XG4gIGZvbnQtc2l6ZTogNDhweDtcbiAgbGluZS1oZWlnaHQ6IDU2cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5mb290ZXItaXRlbS5mb290ZXItbGluay1jb250aW51YXIge1xuICB3aWR0aDogMTMxcHg7XG4gIGhlaWdodDogOTlweDtcbiAgbGVmdDogMTY2MXB4O1xuICB0b3A6IDk4MXB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmZmZmO1xufVxuLmZvb3Rlci1pdGVtLmZvb3Rlci1saW5rLWxvZ291dCB7XG4gIHdpZHRoOiA4OXB4O1xuICBoZWlnaHQ6IDU1cHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgbGluZS1oZWlnaHQ6IDE1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn0iXX0= */";
+    __webpack_exports__["default"] = "div {\n  display: flex;\n  justify-content: space-between;\n  position: absolute;\n  bottom: 0;\n  height: 85px;\n  width: 100%;\n  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);\n}\n\n.footer {\n  display: flex;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n  font-family: \"Mark Pro\";\n  font-style: normal;\n  font-weight: 400;\n  color: #ffffff;\n}\n\n.footer.footer__item--p-essa-janela {\n  width: 562px;\n  font-size: 12px;\n  text-align: right;\n}\n\n.footer.footer__item--app-search {\n  width: 450px;\n}\n\n.footer.footer__item--p-application-refresh {\n  width: 109px;\n  font-size: 14px;\n  text-align: right;\n}\n\n.footer.footer__item--app-counter {\n  width: 81px;\n}\n\n.footer.footer__item--a-continuar-navegando {\n  background: #ffffff;\n  font-size: 12px;\n  color: #c13216;\n  text-align: center;\n  width: 150px;\n}\n\n.footer.footer__item--a-logout {\n  font-size: 12px;\n  color: #ffffff;\n}\n\n* {\n  box-sizing: border-box;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9mb290ZXIvQzpcXFVzZXJzXFx2YWxiZXIudmFzY29uY2Vsb3NcXERvY3VtZW50c1xcQUVNXFxQcm9qZXRvc1xcYWVtLWFuZ3VsYXItbG9naW4tY2hhbGxlbmdlXFx1aS5mcm9udGVuZC9zcmNcXGFwcFxcY29tcG9uZW50c1xcZm9vdGVyXFxmb290ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQUE7RUFDQSw4QkFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EsK0RBQUE7QUNDSjs7QURFQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUVBLGtCQUFBO0VBQ0EsbUJBQUE7RUFFQSx1QkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFFQSxjQUFBO0FDRko7O0FEUUk7RUFDSSxZQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0FDTlI7O0FEU0k7RUFDSSxZQUFBO0FDUFI7O0FEVUk7RUFDSSxZQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0FDUlI7O0FEV0k7RUFDSSxXQUFBO0FDVFI7O0FEWUk7RUFDSSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0FDVlI7O0FEYUk7RUFDSSxlQUFBO0VBQ0EsY0FBQTtBQ1hSOztBRGVBO0VBQ0ksc0JBQUE7QUNaSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYm90dG9tOiAwO1xyXG4gICAgaGVpZ2h0OiA4NXB4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTAuMTZkZWcsICMzMzM4M2QgMCUsICMxYzFkMjAgMTAwJSk7XHJcbn1cclxuXHJcbi5mb290ZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcblxyXG4gICAgcGFkZGluZy1sZWZ0OiAyMHB4O1xyXG4gICAgcGFkZGluZy1yaWdodDogMjBweDtcclxuXHJcbiAgICBmb250LWZhbWlseTogJ01hcmsgUHJvJztcclxuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcblxyXG4gICAgY29sb3I6ICNmZmZmZmY7XHJcblxyXG4gICAgLy8gKyAuZm9vdGVyIHtcclxuICAgIC8vICAgICBib3JkZXItbGVmdDogM3B4IHNvbGlkICNmZmZmZmY7XHJcbiAgICAvLyB9XHJcblxyXG4gICAgJi5mb290ZXJfX2l0ZW0tLXAtZXNzYS1qYW5lbGEge1xyXG4gICAgICAgIHdpZHRoOiA1NjJweDtcclxuICAgICAgICBmb250LXNpemU6IDEycHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgICB9XHJcblxyXG4gICAgJi5mb290ZXJfX2l0ZW0tLWFwcC1zZWFyY2gge1xyXG4gICAgICAgIHdpZHRoOiA0NTBweDtcclxuICAgIH1cclxuXHJcbiAgICAmLmZvb3Rlcl9faXRlbS0tcC1hcHBsaWNhdGlvbi1yZWZyZXNoIHtcclxuICAgICAgICB3aWR0aDogMTA5cHg7XHJcbiAgICAgICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgICAgIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gICAgfVxyXG5cclxuICAgICYuZm9vdGVyX19pdGVtLS1hcHAtY291bnRlciB7XHJcbiAgICAgICAgd2lkdGg6IDgxcHg7XHJcbiAgICB9XHJcblxyXG4gICAgJi5mb290ZXJfX2l0ZW0tLWEtY29udGludWFyLW5hdmVnYW5kbyB7XHJcbiAgICAgICAgYmFja2dyb3VuZDogI2ZmZmZmZjtcclxuICAgICAgICBmb250LXNpemU6IDEycHg7XHJcbiAgICAgICAgY29sb3I6ICNjMTMyMTY7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgIHdpZHRoOiAxNTBweDtcclxuICAgIH1cclxuXHJcbiAgICAmLmZvb3Rlcl9faXRlbS0tYS1sb2dvdXQge1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTJweDtcclxuICAgICAgICBjb2xvcjogI2ZmZmZmZjtcclxuICAgIH1cclxufVxyXG5cclxuKiB7XHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG59XHJcbiIsImRpdiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IDA7XG4gIGhlaWdodDogODVweDtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCg5MC4xNmRlZywgIzMzMzgzZCAwJSwgIzFjMWQyMCAxMDAlKTtcbn1cblxuLmZvb3RlciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmctbGVmdDogMjBweDtcbiAgcGFkZGluZy1yaWdodDogMjBweDtcbiAgZm9udC1mYW1pbHk6IFwiTWFyayBQcm9cIjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNDAwO1xuICBjb2xvcjogI2ZmZmZmZjtcbn1cbi5mb290ZXIuZm9vdGVyX19pdGVtLS1wLWVzc2EtamFuZWxhIHtcbiAgd2lkdGg6IDU2MnB4O1xuICBmb250LXNpemU6IDEycHg7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xufVxuLmZvb3Rlci5mb290ZXJfX2l0ZW0tLWFwcC1zZWFyY2gge1xuICB3aWR0aDogNDUwcHg7XG59XG4uZm9vdGVyLmZvb3Rlcl9faXRlbS0tcC1hcHBsaWNhdGlvbi1yZWZyZXNoIHtcbiAgd2lkdGg6IDEwOXB4O1xuICBmb250LXNpemU6IDE0cHg7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xufVxuLmZvb3Rlci5mb290ZXJfX2l0ZW0tLWFwcC1jb3VudGVyIHtcbiAgd2lkdGg6IDgxcHg7XG59XG4uZm9vdGVyLmZvb3Rlcl9faXRlbS0tYS1jb250aW51YXItbmF2ZWdhbmRvIHtcbiAgYmFja2dyb3VuZDogI2ZmZmZmZjtcbiAgZm9udC1zaXplOiAxMnB4O1xuICBjb2xvcjogI2MxMzIxNjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTUwcHg7XG59XG4uZm9vdGVyLmZvb3Rlcl9faXRlbS0tYS1sb2dvdXQge1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjZmZmZmZmO1xufVxuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn0iXX0= */";
     /***/
   },
 
@@ -1369,37 +1375,59 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _counter_counter_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _counter_counter_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ../counter/counter.component */
     "./src/app/components/counter/counter.component.ts");
 
     var FooterComponent = /*#__PURE__*/function () {
-      function FooterComponent() {
+      function FooterComponent(router) {
         _classCallCheck(this, FooterComponent);
 
+        this.router = router;
         this.counterState = 'counter is ticking';
       }
 
       _createClass(FooterComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this3 = this;
-
+        value: function ngOnInit() {}
+      }, {
+        key: "ngAfterViewInit",
+        value: function ngAfterViewInit() {
           this.counter.startAt = 180;
-          this.counter.counterState.subscribe(function (msg) {
-            if (msg === 'COMPLETE') {
-              _this3.counterState = 'counter has stopped';
-            }
-          });
           this.counter.start();
+        }
+      }, {
+        key: "keepBrowsing",
+        value: function keepBrowsing() {
+          this.counter.reset = true;
+          this.counter.stop();
+          this.counter.start();
+        }
+      }, {
+        key: "logout",
+        value: function logout() {
+          this.counter.stop();
+          this.router.navigate(['/content/angularapp/us/en/login.html']);
         }
       }]);
 
       return FooterComponent;
     }();
 
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"])('counter', {
-      read: _counter_counter_component__WEBPACK_IMPORTED_MODULE_3__["CounterComponent"]
+    FooterComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }];
+    };
+
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"])(_counter_counter_component__WEBPACK_IMPORTED_MODULE_4__["CounterComponent"], {
+      "static": false
     })], FooterComponent.prototype, "counter", void 0);
     FooterComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
       selector: 'app-footer',
@@ -1411,10 +1439,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       "./src/app/components/footer/footer.component.scss"))["default"]]
     })], FooterComponent);
     Object(_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["MapTo"])('angularapp/components/footer-component')(FooterComponent); // TELA 2
-    // - Temperatura deve ser acessada por requisição de API com localização definida pela localização do usuário que fez o login.
-    // - Contador: começa em 180 segundos quando logada a página, quando zerar deve fazer automaticamente o logout.
-    // - Botão “continuar navegando” reseta o contador e retorna aos 180 segundos
-    // - Botão logout faz o logout e retorna para página inicial.
+    // - [ok] Temperatura deve ser acessada por requisição de API com localização definida pela localização do usuário que fez o login.
+    // - [ok] Contador: começa em 180 segundos quando logada a página, quando zerar deve fazer automaticamente o logout.
+    // - [ok] Botão “continuar navegando” reseta o contador e retorna aos 180 segundos
+    // - [ok] Botão logout faz o logout e retorna para página inicial.
     // - Busca: após algo ser buscado na área de busca será direcionado para a página de perfil do colaborador.
 
     /***/
@@ -1654,7 +1682,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".input {\n  background: transparent;\n  border: 1px solid #ffffff;\n  box-sizing: border-box;\n  border-radius: 50px;\n  color: white;\n  text-indent: 2em;\n  margin-bottom: 1rem;\n  width: 100%;\n  height: 60px;\n}\n\n::-moz-placeholder {\n  color: white;\n}\n\n:-ms-input-placeholder {\n  color: white;\n}\n\n::placeholder {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9pbnB1dC9DOlxcVXNlcnNcXHZhbGJlci52YXNjb25jZWxvc1xcRG9jdW1lbnRzXFxBRU1cXFByb2pldG9zXFxhZW0tYW5ndWxhci1sb2dpbi1jaGFsbGVuZ2VcXHVpLmZyb250ZW5kL3NyY1xcYXBwXFxjb21wb25lbnRzXFxpbnB1dFxcaW5wdXQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvaW5wdXQvaW5wdXQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx1QkFBQTtFQUNBLHlCQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUVBLFlBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0VBRUEsV0FBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESjs7QURBQTtFQUNJLFlBQUE7QUNESjs7QURBQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaW5wdXQvaW5wdXQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW5wdXQge1xyXG4gICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjZmZmZmZmO1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcblxyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgdGV4dC1pbmRlbnQ6IDJlbTtcclxuICAgIG1hcmdpbi1ib3R0b206IDFyZW07XHJcblxyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDYwcHg7XHJcbn1cclxuXHJcbjo6cGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbiIsIi5pbnB1dCB7XG4gIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICBib3JkZXI6IDFweCBzb2xpZCAjZmZmZmZmO1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICBjb2xvcjogd2hpdGU7XG4gIHRleHQtaW5kZW50OiAyZW07XG4gIG1hcmdpbi1ib3R0b206IDFyZW07XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDYwcHg7XG59XG5cbjo6cGxhY2Vob2xkZXIge1xuICBjb2xvcjogd2hpdGU7XG59Il19 */";
+    __webpack_exports__["default"] = ".input__div {\n  width: 100%;\n}\n.input__div .mat-icon {\n  position: absolute;\n  padding: 18px;\n  width: 40px;\n}\n.input__input {\n  width: 100%;\n  height: 60px;\n  margin-bottom: 1rem;\n  background: transparent;\n  border: 1px solid #ffffff;\n  border-radius: 50px;\n  color: white;\n  text-indent: 4em;\n}\n::-moz-placeholder {\n  color: white;\n}\n:-ms-input-placeholder {\n  color: white;\n}\n::placeholder {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9pbnB1dC9DOlxcVXNlcnNcXHZhbGJlci52YXNjb25jZWxvc1xcRG9jdW1lbnRzXFxBRU1cXFByb2pldG9zXFxhZW0tYW5ndWxhci1sb2dpbi1jaGFsbGVuZ2VcXHVpLmZyb250ZW5kL3NyY1xcYXBwXFxjb21wb25lbnRzXFxpbnB1dFxcaW5wdXQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvaW5wdXQvaW5wdXQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0FDQ0o7QURDSTtFQUNJLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7QUNDUjtBREdBO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EseUJBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtBQ0FKO0FER0E7RUFDSSxZQUFBO0FDQUo7QUREQTtFQUNJLFlBQUE7QUNBSjtBRERBO0VBQ0ksWUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9pbnB1dC9pbnB1dC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbnB1dF9fZGl2IHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG5cclxuICAgIC5tYXQtaWNvbiB7XHJcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIHBhZGRpbmc6IDE4cHg7XHJcbiAgICAgICAgd2lkdGg6IDQwcHg7XHJcbiAgICB9XHJcbn1cclxuXHJcbi5pbnB1dF9faW5wdXQge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDYwcHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxcmVtO1xyXG4gICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjZmZmZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHRleHQtaW5kZW50OiA0ZW07XHJcbn1cclxuXHJcbjo6cGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbiIsIi5pbnB1dF9fZGl2IHtcbiAgd2lkdGg6IDEwMCU7XG59XG4uaW5wdXRfX2RpdiAubWF0LWljb24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHBhZGRpbmc6IDE4cHg7XG4gIHdpZHRoOiA0MHB4O1xufVxuXG4uaW5wdXRfX2lucHV0IHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogNjBweDtcbiAgbWFyZ2luLWJvdHRvbTogMXJlbTtcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNmZmZmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1pbmRlbnQ6IDRlbTtcbn1cblxuOjpwbGFjZWhvbGRlciB7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */";
     /***/
   },
 
@@ -1725,14 +1753,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(InputComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this4 = this;
+          var _this3 = this;
 
           this.name = this.type === 'text' ? 'username' : 'password';
+          this.icon = this.type === 'text' ? 'person' : 'lock';
           this.localStorageService.clear();
           this.valueChanged.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["debounceTime"])(1000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["distinctUntilChanged"])()).subscribe(function (model) {
-            _this4.value = model;
+            _this3.value = model;
 
-            _this4.localStorageService.add(_this4.name, _this4.value);
+            _this3.localStorageService.add(_this3.name, _this3.value);
           });
         }
       }, {
@@ -1841,10 +1870,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(LabelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this4 = this;
 
           this.labelService.getInvalidLogin().subscribe(function (invalid) {
-            _this5.isInvalidLogin = invalid;
+            _this4.isInvalidLogin = invalid;
           });
         }
       }]);
@@ -2098,7 +2127,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./src/app/components/model-manager.service.ts");
 
     var PageComponent = /*#__PURE__*/_createClass(function PageComponent(route, modelManagerService) {
-      var _this6 = this;
+      var _this5 = this;
 
       _classCallCheck(this, PageComponent);
 
@@ -2107,9 +2136,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.modelManagerService.getData({
         path: this.route.snapshot.data.path
       }).then(function (data) {
-        _this6.path = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].PATH_PROP];
-        _this6.items = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_PROP];
-        _this6.itemsOrder = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_ORDER_PROP];
+        _this5.path = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].PATH_PROP];
+        _this5.items = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_PROP];
+        _this5.itemsOrder = data[_adobe_aem_angular_editable_components__WEBPACK_IMPORTED_MODULE_1__["Constants"].ITEMS_ORDER_PROP];
       });
     });
 
@@ -2173,7 +2202,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".search {\n  width: 453px;\n  height: 45px;\n  background: #26292c;\n  border: 1px solid #ffffff;\n  box-sizing: border-box;\n  border-radius: 50px;\n  margin-top: 0.5em;\n  text-indent: 2em;\n}\n\n::-moz-placeholder {\n  color: white;\n}\n\n:-ms-input-placeholder {\n  color: white;\n}\n\n::placeholder {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zZWFyY2gvQzpcXFVzZXJzXFx2YWxiZXIudmFzY29uY2Vsb3NcXERvY3VtZW50c1xcQUVNXFxQcm9qZXRvc1xcYWVtLWFuZ3VsYXItbG9naW4tY2hhbGxlbmdlXFx1aS5mcm9udGVuZC9zcmNcXGFwcFxcY29tcG9uZW50c1xcc2VhcmNoXFxzZWFyY2guY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvc2VhcmNoL3NlYXJjaC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0FDQ0o7O0FERUE7RUFDSSxZQUFBO0FDQ0o7O0FERkE7RUFDSSxZQUFBO0FDQ0o7O0FERkE7RUFDSSxZQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NlYXJjaC9zZWFyY2guY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VhcmNoIHtcclxuICAgIHdpZHRoOiA0NTNweDtcclxuICAgIGhlaWdodDogNDVweDtcclxuICAgIGJhY2tncm91bmQ6ICMyNjI5MmM7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjZmZmZmZmO1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbiAgICBtYXJnaW4tdG9wOiAwLjVlbTtcclxuICAgIHRleHQtaW5kZW50OiAyZW07XHJcbn1cclxuXHJcbjo6cGxhY2Vob2xkZXIge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbiIsIi5zZWFyY2gge1xuICB3aWR0aDogNDUzcHg7XG4gIGhlaWdodDogNDVweDtcbiAgYmFja2dyb3VuZDogIzI2MjkyYztcbiAgYm9yZGVyOiAxcHggc29saWQgI2ZmZmZmZjtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm9yZGVyLXJhZGl1czogNTBweDtcbiAgbWFyZ2luLXRvcDogMC41ZW07XG4gIHRleHQtaW5kZW50OiAyZW07XG59XG5cbjo6cGxhY2Vob2xkZXIge1xuICBjb2xvcjogd2hpdGU7XG59Il19 */";
+    __webpack_exports__["default"] = ".search__div {\n  width: 100%;\n}\n.search__div .mat-icon {\n  position: absolute;\n  padding: 10px;\n  width: 40px;\n}\n.search__input {\n  width: 100%;\n  height: 45px;\n  background: transparent;\n  border: 1px solid #ffffff;\n  box-sizing: border-box;\n  border-radius: 50px;\n}\n::-moz-placeholder {\n  color: white;\n  text-align: center;\n}\n:-ms-input-placeholder {\n  color: white;\n  text-align: center;\n}\n::placeholder {\n  color: white;\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zZWFyY2gvQzpcXFVzZXJzXFx2YWxiZXIudmFzY29uY2Vsb3NcXERvY3VtZW50c1xcQUVNXFxQcm9qZXRvc1xcYWVtLWFuZ3VsYXItbG9naW4tY2hhbGxlbmdlXFx1aS5mcm9udGVuZC9zcmNcXGFwcFxcY29tcG9uZW50c1xcc2VhcmNoXFxzZWFyY2guY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvc2VhcmNoL3NlYXJjaC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFdBQUE7QUNDSjtBRENJO0VBQ0ksa0JBQUE7RUFDQSxhQUFBO0VBQ0EsV0FBQTtBQ0NSO0FER0E7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLHVCQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0FDQUo7QURHQTtFQUNJLFlBQUE7RUFDQSxrQkFBQTtBQ0FKO0FERkE7RUFDSSxZQUFBO0VBQ0Esa0JBQUE7QUNBSjtBREZBO0VBQ0ksWUFBQTtFQUNBLGtCQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NlYXJjaC9zZWFyY2guY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VhcmNoX19kaXYge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcblxyXG4gICAgLm1hdC1pY29uIHtcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgcGFkZGluZzogMTBweDtcclxuICAgICAgICB3aWR0aDogNDBweDtcclxuICAgIH1cclxufVxyXG5cclxuLnNlYXJjaF9faW5wdXQge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDQ1cHg7XHJcbiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNmZmZmZmY7XHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcclxufVxyXG5cclxuOjpwbGFjZWhvbGRlciB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuIiwiLnNlYXJjaF9fZGl2IHtcbiAgd2lkdGg6IDEwMCU7XG59XG4uc2VhcmNoX19kaXYgLm1hdC1pY29uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBwYWRkaW5nOiAxMHB4O1xuICB3aWR0aDogNDBweDtcbn1cblxuLnNlYXJjaF9faW5wdXQge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA0NXB4O1xuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgYm9yZGVyOiAxcHggc29saWQgI2ZmZmZmZjtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuOjpwbGFjZWhvbGRlciB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */";
     /***/
   },
 
@@ -2237,10 +2266,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(SearchComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this6 = this;
 
+          this.placeholder = 'Buscar usuário';
           this.valueChanged.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["debounceTime"])(1000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["distinctUntilChanged"])()).subscribe(function (model) {
-            _this7.value = model;
+            _this6.value = model;
           });
         }
       }, {
@@ -2342,10 +2372,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(WeatherComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this8 = this;
+          var _this7 = this;
 
           this.weatherService.getWeather().subscribe(function (weather) {
-            _this8.weather = weather;
+            _this7.weather = weather;
           });
         }
       }]);
@@ -2429,7 +2459,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(WeatherService, [{
         key: "getWeather",
         value: function getWeather() {
-          var _this9 = this;
+          var _this8 = this;
 
           var location = {
             lat: -30.0331,
@@ -2450,7 +2480,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var weather = {
               location: "".concat(res.name, " - RS"),
               temperature: "".concat(res.main.temp.toFixed(0), "\xB0"),
-              imageSrc: _this9.getWeatherIcon("".concat(res.weather[0].icon, ".png"))
+              imageSrc: _this8.getWeatherIcon("".concat(res.weather[0].icon, ".png"))
             };
             return weather;
           }));
