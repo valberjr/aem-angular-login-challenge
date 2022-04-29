@@ -1,0 +1,26 @@
+div {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.counter-item {
+    flex: 1;
+
+    &.counter-item__span-number-seconds {
+        font-family: 'Roboto';
+        font-size: 48px;
+        text-align: center;
+    }
+
+    &.counter-item__span-text-seconds {
+        font-family: 'Mark Pro';
+        font-size: 14px;
+        text-align: center;
+        padding-top: 15px;
+    }
+}

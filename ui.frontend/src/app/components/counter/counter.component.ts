@@ -6,8 +6,10 @@ import {
     OnInit,
     Output,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { interval, Observable, Subscription } from 'rxjs';
-import { take, map } from 'rxjs/operators';
+import { finalize, map, take } from 'rxjs/operators';
+import { LocalStorageService } from 'src/app/local-storage.service';
 
 @Component({
     selector: 'app-counter',
@@ -16,59 +18,52 @@ import { take, map } from 'rxjs/operators';
 })
 export class CounterComponent implements OnInit {
     @Input()
-    startAt = 1;
-
-    @Input()
-    showTimeRemaining = true;
+    startAt;
 
     @Output()
     counterState = new EventEmitter();
 
-    currentValue = '';
+    currentValue: number;
+    reset = false;
 
     currentSubscription: Subscription;
 
-    constructor(private changeDetector: ChangeDetectorRef) {}
+    constructor(
+        private changeDetector: ChangeDetectorRef,
+        private router: Router,
+        private localStorageService: LocalStorageService
+    ) {}
 
     ngOnInit(): void {}
 
     start() {
-        this.currentValue = this.formatValue(this.startAt);
+        const time: Observable<number> = interval(1000);
 
+        this.currentValue = this.startAt;
         this.changeDetector.detectChanges();
 
-        const t: Observable<number> = interval(1000);
-
-        this.currentSubscription = t
+        this.currentSubscription = time
             .pipe(
                 take(this.startAt),
-                map((v) => this.startAt - (v + 1))
+                map((v) => this.startAt - (v + 1)),
+                finalize(() => {
+                    if (!this.reset) {
+                        this.stop();
+                        this.localStorageService.clear();
+                        this.router.navigate([
+                            '/content/angularapp/us/en/login.html',
+                        ]);
+                    }
+                })
             )
-            .subscribe(
-                (v) => {
-                    this.currentValue = this.formatValue(v);
-                    this.changeDetector.detectChanges();
-                },
-                () => {
-                    this.currentSubscription.unsubscribe();
-                    this.currentValue = '000';
-                    this.counterState.emit('COMPLETE');
-                    this.changeDetector.detectChanges();
-                }
-            );
+            .subscribe((value) => {
+                this.reset = false;
+                this.currentValue = value;
+                this.changeDetector.detectChanges();
+            });
     }
 
-    private formatValue(v) {
-        const minutes = Math.floor(v / 60);
-        const formattedMinutes = '' + (minutes > 9 ? minutes : '0' + minutes);
-        const seconds = v % 60;
-        const formattedSeconds = '' + (seconds > 9 ? seconds : '0' + seconds);
-
-        return `${formattedMinutes}:${formattedSeconds}`;
-    }
-
-    public stop() {
+    stop() {
         this.currentSubscription.unsubscribe();
-        this.counterState.emit('ABORTED');
     }
 }

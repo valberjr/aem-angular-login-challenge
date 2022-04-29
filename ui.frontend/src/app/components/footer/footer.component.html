@@ -13,11 +13,12 @@
 
     <app-counter class="footer footer__item--app-counter"></app-counter>
 
-    <a class="footer footer__item--a-continuar-navegando" href="#"
-        >Continuar navegando</a
+    <a
+        class="footer footer__item--a-continuar-navegando"
+        (click)="keepBrowsing()"
     >
+        Continuar navegando
+    </a>
 
-    <a class="footer" href="#" routerLink="/content/angularapp/us/en/login.html"
-        >logout</a
-    >
+    <a class="footer" (click)="logout()">logout</a>
 </div>
