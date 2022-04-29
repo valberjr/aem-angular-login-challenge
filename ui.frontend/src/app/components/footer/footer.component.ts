@@ -27,7 +27,7 @@ export class FooterComponent implements OnInit {
     }
 }
 
-MapTo('angularapp/components/input-component')(FooterComponent);
+MapTo('angularapp/components/footer-component')(FooterComponent);
 
 // TELA 2
 // - Temperatura deve ser acessada por requisição de API com localização definida pela localização do usuário que fez o login.
