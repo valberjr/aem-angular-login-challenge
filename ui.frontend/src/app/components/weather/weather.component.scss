@@ -3,28 +3,27 @@
     flex-direction: column;
     font-family: 'Mark Pro';
     font-style: normal;
-}
+    padding-right: 5%;
+    text-align: right;
 
-.weather-city {
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    color: #222222;
-}
-
-.weather-container-icon-temp {
-    display: flex;
-    justify-content: flex-end;
-
-    > img.weather-icon {
-        background: transparent;
-        width: 10%;
+    .weather-city {
+        color: #222222;
     }
 
-    > div.weather-temp {
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 61px;
-        color: #222222;
+    .weather-container-icon-temp {
+        display: flex;
+        justify-content: flex-end;
+
+        > img.weather-icon {
+            background: transparent;
+            width: 10%;
+        }
+
+        > div.weather-temp {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 61px;
+            color: #222222;
+        }
     }
 }
