@@ -1,8 +1,13 @@
-<input
-    class="search"
-    type="text"
-    name="search"
-    [placeholder]="placeholder"
-    [(ngModel)]="value"
-    (ngModelChange)="onChange($event)"
-/>
+<div class="search__div">
+    <mat-icon aria-hidden="false" aria-label="person search icon">
+        person_search
+    </mat-icon>
+    <input
+        class="search__input"
+        type="text"
+        name="search"
+        [placeholder]="placeholder"
+        [(ngModel)]="value"
+        (ngModelChange)="onChange($event)"
+    />
+</div>

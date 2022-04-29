@@ -17,6 +17,7 @@ export class SearchComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {
+        this.placeholder = 'Buscar usuário';
         this.valueChanged
             .pipe(debounceTime(1000), distinctUntilChanged())
             .subscribe((model) => {
