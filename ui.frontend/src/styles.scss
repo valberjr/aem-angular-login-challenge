@@ -86,7 +86,7 @@ body {
     align-items: flex-start;
     padding-top: 2em;
 
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
         padding-top: 4em;
 
         img {
@@ -108,12 +108,12 @@ body {
     .home-container-center-logo {
         img {
             position: absolute;
-            width: 850px;
+            width: 800px;
             left: -300px;
             bottom: 10px;
         }
 
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
             img {
                 width: 750px;
             }
