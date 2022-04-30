@@ -1,23 +1,20 @@
 .current-time-container {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
     align-items: center;
 
-    > div {
-        font-family: 'Mark Pro';
-        font-style: normal;
-        color: #222222;
-    }
+    font-family: 'Mark Pro';
+    font-style: normal;
+    color: #222222;
 
-    > div.current-time-time {
+    line-height: 1;
+
+    div.current-time-hour {
         font-weight: 700;
-        font-size: 7em;
-        line-height: 7rem;
+        font-size: 144px;
     }
 
-    > div.current-time-date {
+    div.current-time-date {
         font-weight: 400;
         font-size: 14px;
     }

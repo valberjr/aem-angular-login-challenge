@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-29T08:48:00.376-03:00"
+        cq:lastModified="{Date}2022-04-30T14:24:37.696-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/angularapp/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -19,26 +19,30 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <container
-                    cq:styleIds="[1650910322865]"
-                    jcr:created="{Date}2022-04-28T10:07:04.530-03:00"
+                    cq:styleIds="[1650911304368]"
+                    jcr:created="{Date}2022-04-30T10:52:29.876-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-28T10:07:04.530-03:00"
+                    jcr:lastModified="{Date}2022-04-30T10:52:29.876-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="angularapp/components/container">
                     <container
-                        cq:styleIds="[1650911304368]"
-                        jcr:created="{Date}2022-04-28T10:07:28.175-03:00"
+                        jcr:created="{Date}2022-04-30T11:01:11.242-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-04-28T10:07:28.175-03:00"
+                        jcr:lastModified="{Date}2022-04-30T11:01:11.242-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="angularapp/components/container">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
                         <image
-                            cq:styleIds="[1650656554389]"
-                            jcr:created="{Date}2022-04-28T10:19:10.240-03:00"
+                            jcr:created="{Date}2022-04-30T11:06:54.561-03:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-28T10:19:24.371-03:00"
+                            jcr:lastModified="{Date}2022-04-30T14:24:37.689-03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="angularapp/components/image"
@@ -49,187 +53,193 @@
                             <cq:responsive jcr:primaryType="nt:unstructured">
                                 <default
                                     jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="4"/>
-                                <phone
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="6"/>
+                                    offset="1"
+                                    width="2"/>
                             </cq:responsive>
                         </image>
-                        <current_time_compone
-                            jcr:created="{Date}2022-04-28T10:20:23.164-03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-28T10:20:23.164-03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="angularapp/components/current-time-component">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="4"/>
-                            </cq:responsive>
-                        </current_time_compone>
-                        <weather_component
-                            jcr:created="{Date}2022-04-28T10:20:30.804-03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-28T10:20:30.804-03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="angularapp/components/weather-component">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="4"/>
-                                <phone
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="6"
-                                    width="6"/>
-                            </cq:responsive>
-                        </weather_component>
                     </container>
-                    <container_1241299673
-                        cq:styleIds="[1650912408120]"
-                        jcr:created="{Date}2022-04-28T10:07:43.244-03:00"
+                    <current_time_compone
+                        jcr:created="{Date}2022-04-30T11:04:45.070-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-04-28T10:07:43.244-03:00"
+                        jcr:lastModified="{Date}2022-04-30T11:04:45.070-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="angularapp/components/current-time-component">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </current_time_compone>
+                    <weather_component
+                        jcr:created="{Date}2022-04-30T11:06:09.155-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-30T11:06:09.155-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="angularapp/components/weather-component">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </weather_component>
+                </container>
+                <container_978523762
+                    cq:styleIds="[1650912408120]"
+                    jcr:created="{Date}2022-04-30T10:52:35.664-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-30T10:52:35.664-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/container">
+                    <container
+                        cq:styleIds="[1651330412467]"
+                        jcr:created="{Date}2022-04-30T10:53:01.840-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-30T10:53:01.840-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="angularapp/components/container">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="5"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
                         <image
-                            cq:styleIds="[1650657344335]"
-                            jcr:created="{Date}2022-04-28T14:23:19.767-03:00"
+                            jcr:created="{Date}2022-04-30T11:54:46.462-03:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-28T14:23:31.255-03:00"
+                            jcr:lastModified="{Date}2022-04-30T11:54:53.281-03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="angularapp/components/image"
                             displayPopupTitle="true"
                             fileReference="/content/dam/angularapp/b9e4a00dba9e388f14aa54aea013fdb0.png"
                             isDecorative="true"
-                            titleValueFromDAM="true">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="6"/>
-                            </cq:responsive>
-                        </image>
-                        <container
-                            cq:styleIds="[1651167430094]"
-                            jcr:created="{Date}2022-04-28T14:24:51.766-03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-28T14:24:51.766-03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="angularapp/components/container">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="6"/>
-                            </cq:responsive>
-                            <text_copy
-                                cq:styleIds="[1650919500234]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:26:58.012-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>Our mission is&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <text_copy_814651303
-                                cq:styleIds="[1650919542353]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:29:32.943-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>Nossa missão é&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <text_copy_1981846627
-                                cq:styleIds="[1650919544022]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:29:46.318-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>to transform the world&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <text_copy_1758858080
-                                cq:styleIds="[1650919546152]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:30:00.809-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>transformar o mundo&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <text_copy_1253137688
-                                cq:styleIds="[1650919547886]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:30:54.759-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>building digital experiences&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <text_copy_1194634310
-                                cq:styleIds="[1650919611225]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:31:55.019-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>construindo experiências digitais&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <text_copy_47343353
-                                cq:styleIds="[1650919621977]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:32:04.056-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>that enable our client’s growth&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                            <text
-                                cq:styleIds="[1650919623673]"
-                                jcr:created="{Date}2022-04-28T14:26:51.974-03:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2022-04-28T14:32:26.859-03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="angularapp/components/text"
-                                text="&lt;p>que permitam o crescimento dos nossos clientes&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
-                                textIsRich="true"/>
-                        </container>
-                    </container_1241299673>
-                    <container_812781084
-                        cq:styleIds="[1650912412612]"
-                        jcr:created="{Date}2022-04-28T10:07:49.908-03:00"
+                            titleValueFromDAM="true"/>
+                    </container>
+                    <container_1476853920
+                        cq:styleIds="[1651167430094]"
+                        jcr:created="{Date}2022-04-30T10:53:39.197-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-04-28T10:07:49.908-03:00"
+                        jcr:lastModified="{Date}2022-04-30T10:53:39.197-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="angularapp/components/container">
-                        <footer_component
-                            jcr:created="{Date}2022-04-29T08:48:00.365-03:00"
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="6"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                        <text_copy_141576442
+                            cq:styleIds="[1650919500234]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-29T08:48:00.365-03:00"
+                            jcr:lastModified="{Date}2022-04-30T11:55:19.169-03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="angularapp/components/footer-component"/>
-                    </container_812781084>
-                </container>
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>Our mission is&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_copy_397008922
+                            cq:styleIds="[1650919542353]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-04-30T11:55:46.583-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>Nossa missão é&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_copy_203663022
+                            cq:styleIds="[1650919544022]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-04-30T11:56:26.136-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>to transform the world&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_copy_2015668617
+                            cq:styleIds="[1650919546152]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-04-30T11:56:45.571-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>transformar o mundo&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_copy_825931790
+                            cq:styleIds="[1650919547886]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-04-30T11:56:58.938-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>building digital experiences&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_copy_1522042553
+                            cq:styleIds="[1650919611225]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-04-30T11:57:11.160-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>construindo experiências digitais&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_copy
+                            cq:styleIds="[1650919621977]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-04-30T11:57:23.666-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>that enable our client’s growth&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text
+                            cq:styleIds="[1650919623673]"
+                            jcr:created="{Date}2022-04-30T11:55:02.084-03:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-04-30T11:57:38.465-03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="angularapp/components/text"
+                            text="&lt;p>que permitam o crescimento dos nossos clientes&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </container_1476853920>
+                </container_978523762>
+                <container_378764732
+                    jcr:created="{Date}2022-04-30T10:52:41.286-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-30T10:52:41.286-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/container">
+                    <footer_component
+                        jcr:created="{Date}2022-04-30T12:56:18.496-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-30T12:56:18.496-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="angularapp/components/footer-component"/>
+                </container_378764732>
             </responsivegrid>
         </root>
         <image/>

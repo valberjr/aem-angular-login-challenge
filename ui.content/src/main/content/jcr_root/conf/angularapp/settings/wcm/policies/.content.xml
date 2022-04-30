@@ -75,7 +75,7 @@
                     </plugins>
                 </policy_651483963895698>
                 <policy_200336340075300
-                    jcr:lastModified="{Date}2022-04-29T16:00:26.550-03:00"
+                    jcr:lastModified="{Date}2022-04-30T14:11:53.158-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Image"
@@ -123,26 +123,16 @@
                         <item0 jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
-                                    cq:styleClasses="logo-compasso"
-                                    cq:styleId="1650656554389"
-                                    cq:styleLabel="Logo Compasso"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="logo-compasso-bola"
-                                    cq:styleId="1650657344335"
-                                    cq:styleLabel="Logo Compasso Bola"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item2
                                     cq:styleClasses="login-background"
                                     cq:styleId="1651093876406"
                                     cq:styleLabel="Login Background"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item3
+                                <item1
                                     cq:styleClasses="logo-compasso-login"
                                     cq:styleId="1651257650330"
                                     cq:styleLabel="Logo Compasso Login"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item4
+                                <item2
                                     cq:styleClasses="logo-compasso-login-mobile"
                                     cq:styleId="1651258804410"
                                     cq:styleLabel="Logo Compasso Login Mobile"
@@ -576,7 +566,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_446125454511900
-                    jcr:lastModified="{Date}2022-04-29T17:21:58.525-03:00"
+                    jcr:lastModified="{Date}2022-04-30T14:46:16.749-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Containers"
@@ -595,39 +585,34 @@
                                     cq:styleLabel="Login Container"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item1
+                                    cq:styleClasses="login-container-image"
+                                    cq:styleId="1651256666057"
+                                    cq:styleLabel="Login Container Image"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
                                     cq:styleClasses="login-container-form-image"
                                     cq:styleId="1651259478017"
                                     cq:styleLabel="Login Container Form Image"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item2
-                                    cq:styleClasses="login-image-container"
-                                    cq:styleId="1651256666057"
-                                    cq:styleLabel="Login Image Container"
-                                    jcr:primaryType="nt:unstructured"/>
                                 <item3
-                                    cq:styleClasses="home-container"
-                                    cq:styleId="1650910322865"
-                                    cq:styleLabel="Home Container"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item4
                                     cq:styleClasses="home-container-header"
                                     cq:styleId="1650911304368"
                                     cq:styleLabel="Home Container Header"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item5
+                                <item4
                                     cq:styleClasses="home-container-center"
                                     cq:styleId="1650912408120"
                                     cq:styleLabel="Home Container Center"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item6
-                                    cq:styleClasses="home-container-texts"
-                                    cq:styleId="1651167430094"
-                                    cq:styleLabel="Home Container Texts"
+                                <item5
+                                    cq:styleClasses="home-container-center-logo"
+                                    cq:styleId="1651330412467"
+                                    cq:styleLabel="Home Container Center Logo"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item7
-                                    cq:styleClasses="home-container-footer"
-                                    cq:styleId="1650912412612"
-                                    cq:styleLabel="Home Container Footer"
+                                <item6
+                                    cq:styleClasses="home-container-center-text"
+                                    cq:styleId="1651167430094"
+                                    cq:styleLabel="Home Container Center Text"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>

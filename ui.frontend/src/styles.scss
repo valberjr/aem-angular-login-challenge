@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Login Page */
+/* Login */
 
 .login-container {
     display: flex;
@@ -18,11 +18,22 @@ body {
     justify-content: center;
     gap: 5rem;
     height: 100vh;
+    // height: 744px;
     background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
     font-family: 'Mark Pro';
     font-style: normal;
     font-weight: 400;
     color: #e0e0e0;
+}
+
+.login-container-image {
+    background: url('/content/dam/angularapp/f7361f224fa873f2f0878af28a00fbf1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
 }
 
 .login-container-form-image {
@@ -34,16 +45,6 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-}
-
-.login-image-container {
-    background: url('/content/dam/angularapp/f7361f224fa873f2f0878af28a00fbf1.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 50vw;
-    height: 100vh;
 }
 
 .login-text-ola {
@@ -67,33 +68,25 @@ body {
     padding-top: 10%;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 768px) {
     .login-container-form-image {
         display: block;
     }
 }
 
-@media (max-width: 820px) {
-    .login-image-container {
+@media (max-width: 768px) {
+    .login-container-image {
         display: none;
     }
 }
 
 /* Home */
 
-// .home-container {
-// }
-
 .home-container-header {
     display: flex;
     align-items: center;
 
-    .logo-compasso > div > img {
-        max-width: 50%;
-        margin-left: 5rem;
-    }
-
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 768px) {
         div.current-time-container {
             display: none;
         }
@@ -101,83 +94,104 @@ body {
 }
 
 .home-container-center {
-    .logo-compasso-bola > div > img {
-        display: flex;
-        //position: absolute;
-        margin-left: -250px;
-        max-width: 100%;
-    }
-}
-
-.home-container-texts {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    // height: 100vh;
 
-    margin-top: 10em;
+    .home-container-center-logo {
+        img {
+            margin-left: -250px;
+        }
+    }
 
-    p {
+    .home-container-center-text {
         text-align: end;
         font-family: 'Mark Pro';
         font-style: normal;
+
+        .home-text-our {
+            font-weight: 700;
+            font-size: 45px;
+            color: #c12d18;
+        }
+
+        .home-text-nossa {
+            font-weight: 400;
+            font-size: 24px;
+            color: #222222;
+        }
+
+        .home-text-to-transform {
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 50px;
+            color: #c12d18;
+        }
+
+        .home-text-transformar {
+            font-weight: 400;
+            font-size: 24px;
+            color: #222222;
+        }
+
+        .home-text-building {
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 50px;
+            color: #c12d18;
+        }
+
+        .home-text-construindo {
+            font-weight: 400;
+            font-size: 24px;
+            color: #222222;
+        }
+
+        .home-text-that {
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 50px;
+            color: #c12d18;
+        }
+
+        .home-text-que {
+            font-weight: 400;
+            font-size: 24px;
+            color: #222222;
+        }
     }
 
-    .home-text-our > p {
-        font-weight: 700;
-        font-size: 36px;
-        color: #c12d18;
-    }
-
-    .home-text-nossa > p {
-        font-weight: 400;
-        font-size: 24px;
-        color: #222222;
-    }
-
-    .home-text-to-transform > p {
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 40px;
-        color: #c12d18;
-    }
-
-    .home-text-transformar > p {
-        font-weight: 400;
-        font-size: 24px;
-        color: #222222;
-    }
-
-    .home-text-building > p {
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 50px;
-        color: #c12d18;
-    }
-
-    .home-text-construindo > p {
-        font-weight: 400;
-        font-size: 24px;
-        color: #222222;
-    }
-
-    .home-text-that > p {
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 50px;
-        color: #c12d18;
-    }
-
-    .home-text-que > p {
-        font-weight: 400;
-        font-size: 24px;
-        color: #222222;
+    @media screen and (max-width: 768px) {
+        .home-container-center-text {
+            display: none;
+        }
     }
 }
 
-// @media screen and (max-width: 1200px) {
-//     .home-container-texts {
-//         display: none;
-//     }
-// }
+/* Footer */
 
-// .home-footer-container {
-// }
+@media screen and (max-width: 768px) {
+    .footer-container {
+        .footer {
+            &.footer__item--p-essa-janela {
+                display: none;
+            }
+
+            &.footer-vertical-line-before-search {
+                display: none;
+            }
+
+            &.footer-vertical-line-after-search {
+                display: none;
+            }
+
+            &.footer__item--p-application-refresh {
+                display: none;
+            }
+
+            &.footer__item--app-counter {
+                display: none;
+            }
+        }
+    }
+}

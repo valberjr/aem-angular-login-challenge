@@ -6,24 +6,21 @@
     padding-right: 5%;
     text-align: right;
 
-    .weather-city {
-        color: #222222;
-    }
+    color: #222222;
 
-    .weather-container-icon-temp {
+    .weather-inner-container {
         display: flex;
         justify-content: flex-end;
 
-        > img.weather-icon {
+        img.weather-icon {
             background: transparent;
             width: 10%;
         }
 
-        > div.weather-temp {
+        div.weather-temp {
             font-weight: 700;
             font-size: 48px;
             line-height: 61px;
-            color: #222222;
         }
     }
 }
