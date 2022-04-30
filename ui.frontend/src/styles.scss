@@ -84,9 +84,15 @@ body {
 
 .home-container-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     @media screen and (max-width: 768px) {
+        padding-top: 4em;
+
+        img {
+            width: 200px;
+        }
+
         div.current-time-container {
             display: none;
         }
@@ -95,12 +101,22 @@ body {
 
 .home-container-center {
     display: flex;
-    align-items: center;
-    // height: 100vh;
+    justify-content: center;
+    padding-top: 8%;
+    height: 100vh;
 
     .home-container-center-logo {
         img {
-            margin-left: -250px;
+            position: absolute;
+            width: 850px;
+            left: -300px;
+            bottom: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            img {
+                width: 750px;
+            }
         }
     }
 

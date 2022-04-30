@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit, AfterViewInit {
     ngOnInit(): void {}
 
     ngAfterViewInit(): void {
-        this.counter.startAt = 180;
+        this.counter.startAt = 999;
         this.counter.start();
     }
 
