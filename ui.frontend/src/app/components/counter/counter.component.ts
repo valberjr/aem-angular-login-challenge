@@ -9,7 +9,7 @@ import {
 import { Router } from '@angular/router';
 import { interval, Observable, Subscription } from 'rxjs';
 import { finalize, map, take } from 'rxjs/operators';
-import { LocalStorageService } from 'src/app/local-storage.service';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
 
 @Component({
     selector: 'app-counter',

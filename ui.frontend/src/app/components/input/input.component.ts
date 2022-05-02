@@ -2,7 +2,7 @@ import { MapTo } from '@adobe/aem-angular-editable-components';
 import { Component, Input, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import { LocalStorageService } from 'src/app/local-storage.service';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
 
 @Component({
     selector: 'app-input',

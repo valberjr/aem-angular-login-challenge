@@ -1,8 +1,8 @@
 import { MapTo } from '@adobe/aem-angular-editable-components';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LabelService } from 'src/app/label.service';
-import { LocalStorageService } from 'src/app/local-storage.service';
+import { LabelService } from 'src/app/services/label.service';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
 import { User } from 'src/app/user';
 
 @Component({

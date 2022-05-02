@@ -1,6 +1,6 @@
 import { MapTo } from '@adobe/aem-angular-editable-components';
 import { Component, Input, OnInit } from '@angular/core';
-import { LabelService } from 'src/app/label.service';
+import { LabelService } from 'src/app/services/label.service';
 
 @Component({
     selector: 'app-label',
