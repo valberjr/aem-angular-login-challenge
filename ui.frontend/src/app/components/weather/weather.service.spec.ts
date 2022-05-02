@@ -3,7 +3,7 @@ import {
     HttpTestingController,
 } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { WeatherService } from './weather.service';
+import { WeatherService } from '../../services/weather.service';
 
 import { mockWeather } from 'src/mocks/mock-weather';
 

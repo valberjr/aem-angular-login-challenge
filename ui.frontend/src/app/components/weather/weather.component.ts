@@ -1,7 +1,7 @@
 import { MapTo } from '@adobe/aem-angular-editable-components';
 import { Component, OnInit } from '@angular/core';
 import { Weather } from 'src/app/models/weather';
-import { WeatherService } from './weather.service';
+import { WeatherService } from '../../services/weather.service';
 
 @Component({
     selector: 'app-weather',
