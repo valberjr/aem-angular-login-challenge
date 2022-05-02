@@ -12,7 +12,7 @@ import { AemAngularCoreWcmComponentsAccordionV1 } from '@adobe/aem-core-componen
 import { AemAngularCoreWcmComponentsTabsV1 } from '@adobe/aem-core-components-angular-spa/containers/tabs/v1';
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -37,6 +37,12 @@ import { LinkComponent } from './components/link/link.component';
 import { LabelComponent } from './components/label/label.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CounterComponent } from './components/counter/counter.component';
+
+import localePT from '@angular/common/locales/pt';
+
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePT);
 
 @NgModule({
     imports: [
@@ -68,7 +74,11 @@ import { CounterComponent } from './components/counter/counter.component';
         MatButtonModule,
         MatIconModule,
     ],
-    providers: [ModelManagerService, { provide: APP_BASE_HREF, useValue: '/' }],
+    providers: [
+        ModelManagerService,
+        { provide: APP_BASE_HREF, useValue: '/' },
+        { provide: LOCALE_ID, useValue: 'pt-br' },
+    ],
     declarations: [
         AppComponent,
         PageComponent,
