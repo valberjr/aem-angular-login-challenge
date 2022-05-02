@@ -1,9 +1,9 @@
 import { MapTo } from '@adobe/aem-angular-editable-components';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/user';
 import { LabelService } from 'src/app/services/label.service';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
-import { User } from 'src/app/user';
 
 @Component({
     selector: 'app-button',

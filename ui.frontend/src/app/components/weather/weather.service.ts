@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { Location } from 'src/app/location';
-import { Weather } from 'src/app/weather';
+import { Location } from 'src/app/models/location';
+import { Weather } from 'src/app/models/weather';
 
 const URL_OPEN_WEATHER = 'http://api.openweathermap.org/data/2.5/weather';
 const URL_OPEN_WEATHER_ICON = 'http://openweathermap.org/img/w';

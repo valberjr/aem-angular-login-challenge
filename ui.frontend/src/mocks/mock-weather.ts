@@ -1,4 +1,4 @@
-import { Weather } from 'src/app/weather';
+import { Weather } from 'src/app/models/weather';
 
 const mockWeather: Weather = {
     location: 'Porto Alegre - RS',
